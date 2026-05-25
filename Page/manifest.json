@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "EZ-Page",
+  "version": "1.0.0",
+  "description": "极简风格的新标签页，支持自定义快捷方式和 GitHub 同步",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [],
+  "host_permissions": [
+    "https://www.bing.com/*",
+    "https://wallhaven.cc/*",
+    "https://*/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https: data: blob:; connect-src https:;"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
