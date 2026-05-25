@@ -1,7 +1,7 @@
 import { state, load, cfg, cfgSet, applyConfig, CONFIG_DEFAULTS, WALLPAPER_KEYS, getOrderedEngines, setEngineOrder } from './store.js';
 import { showToast, formatRangeLabel, refreshSettingsUI, refreshBgFitUI } from './utils.js';
 import { renderSites } from './sites.js';
-import { applyPreset } from './presets.js';
+import { applyPreset, applySuite } from './presets.js';
 import { renderEngineDropdown } from './search.js';
 
 export function initSettings() {
@@ -40,26 +40,37 @@ export function initSettings() {
   });
 
   document.querySelectorAll('.settings-entry').forEach(function (entry) {
-      entry.addEventListener('click', function () {
-        showSettingsPage(this.dataset.page);
-      });
+    entry.addEventListener('click', function () {
+      showSettingsPage(this.dataset.page);
     });
+  });
 
   initEngineSort();
 
   document.querySelectorAll('.preset-btn').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var row = this.closest('.preset-row');
-        var group = row.dataset.presetGroup;
-        var name = this.dataset.preset;
-        applyPreset(group, name);
-        applyConfig();
-        refreshSettingsUI();
-        renderSites();
-        row.querySelectorAll('.preset-btn').forEach(function (b) { b.classList.remove('active'); });
-        this.classList.add('active');
-      });
+    btn.addEventListener('click', function () {
+      var row = this.closest('.preset-row');
+      var group = row.dataset.presetGroup;
+      var name = this.dataset.preset;
+      applyPreset(group, name);
+      applyConfig();
+      refreshSettingsUI();
+      renderSites();
+      row.querySelectorAll('.preset-btn').forEach(function (b) { b.classList.remove('active'); });
+      this.classList.add('active');
     });
+  });
+
+  document.querySelectorAll('.suite-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var suiteName = this.dataset.suite;
+      applySuite(suiteName);
+      applyConfig();
+      refreshSettingsUI();
+      renderSites();
+      showToast('套装已应用: ' + this.textContent);
+    });
+  });
 
   document.querySelectorAll('.toggle-switch').forEach(function (el) {
     var key = el.dataset.key;

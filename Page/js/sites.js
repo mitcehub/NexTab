@@ -127,6 +127,7 @@ export function renderSites() {
     }
 
     img.onerror = function () {
+      img.onerror = null;
       showLetter();
     };
     iconWrap.appendChild(img);
@@ -152,6 +153,7 @@ export function renderSites() {
 
     a.addEventListener('dragend', function () {
       this.classList.remove('dragging');
+      state.dragSrcIndex = null;
       grid.querySelectorAll('.site-item').forEach(function (el) {
         el.classList.remove('drag-over-left', 'drag-over-right');
       });
@@ -176,7 +178,7 @@ export function renderSites() {
       this.classList.remove('drag-over-left', 'drag-over-right');
       var fromIndex = state.dragSrcIndex;
       var toIndex = i;
-      if (fromIndex === toIndex) return;
+      if (fromIndex === null || fromIndex === undefined || fromIndex === toIndex) return;
       var item = state.sites.splice(fromIndex, 1)[0];
       var rect = this.getBoundingClientRect();
       var midX = rect.left + rect.width / 2;

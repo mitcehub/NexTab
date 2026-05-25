@@ -4324,5 +4324,89 @@
     "domain": "kuaichuan.360kuai.com",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/kuaichuan.360kuai.com.svg",
     "bgColor": null
+  },
+  {
+    "title": "Backstage",
+    "url": "https://backstage.com",
+    "domain": "backstage.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/backstage_casting.svg",
+    "bgColor": "#000000"
+  },
+  {
+    "title": "F#",
+    "url": "https://foundation.fsharp.org/logo",
+    "domain": "foundation.fsharp.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/fsharp.svg",
+    "bgColor": "#378BBA"
+  },
+  {
+    "title": "Ferrari N.V.",
+    "url": "https://corporate.ferrari.com",
+    "domain": "corporate.ferrari.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ferrarinv.svg",
+    "bgColor": "#EB2E2C"
+  },
+  {
+    "title": "Graphite",
+    "url": "https://graphite.art/logo",
+    "domain": "graphite.art",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/graphite_editor.svg",
+    "bgColor": "#473A3A"
+  },
+  {
+    "title": "Handshake",
+    "url": "https://handshake.org",
+    "domain": "handshake.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/handshake_protocol.svg",
+    "bgColor": "#000000"
+  },
+  {
+    "title": "Hive",
+    "url": "https://hive.io/brand",
+    "domain": "hive.io",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/hive_blockchain.svg",
+    "bgColor": "#E31337"
+  },
+  {
+    "title": "Mongoose",
+    "url": "https://mongoose.ws",
+    "domain": "mongoose.ws",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mongoosedotws.svg",
+    "bgColor": "#F04D35"
+  },
+  {
+    "title": "Sat.1",
+    "url": "https://www.prosiebensat1.com/presse/downloads/logos",
+    "domain": "prosiebensat1.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/sat1.svg",
+    "bgColor": "#047DA3"
+  },
+  {
+    "title": "Sphere Online Judge",
+    "url": "https://www.spoj.com",
+    "domain": "spoj.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/spoj.svg",
+    "bgColor": "#337AB7"
+  },
+  {
+    "title": "Spring",
+    "url": "https://www.spri.ng",
+    "domain": "spri.ng",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/spring_creators.svg",
+    "bgColor": "#000000"
+  },
+  {
+    "title": "Tata Consultancy Services",
+    "url": "https://www.tcs.com",
+    "domain": "tcs.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tcs.svg",
+    "bgColor": "#EE3984"
+  },
+  {
+    "title": "Uniqlo",
+    "url": "https://www.uniqlo.com",
+    "domain": "uniqlo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/uniqlo_ja.svg",
+    "bgColor": "#FF0000"
   }
 ]

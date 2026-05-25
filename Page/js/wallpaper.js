@@ -141,48 +141,48 @@ export function initWallpaper() {
 
     if (gallerySource === 'bing') {
       fetch('https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8&mkt=zh-CN')
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        loading.style.display = 'none';
-        galleryLoaded = true;
-        galleryLoading = false;
-        var items = data.images.map(function (img) {
-          var thumbUrl = 'https://www.bing.com' + img.url;
-          var fullUrl = thumbUrl.replace(/1920x1080/g, 'UHD');
-          return { thumb: thumbUrl, full: fullUrl, title: img.copyright || img.title || '' };
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          loading.style.display = 'none';
+          galleryLoaded = true;
+          galleryLoading = false;
+          var items = data.images.map(function (img) {
+            var thumbUrl = 'https://www.bing.com' + img.url;
+            var fullUrl = thumbUrl.replace(/1920x1080/g, 'UHD');
+            return { thumb: thumbUrl, full: fullUrl, title: img.copyright || img.title || '' };
+          });
+          renderGallery(items);
+        })
+        .catch(function () {
+          loading.textContent = '加载失败，请检查网络';
+          galleryLoading = false;
         });
-        renderGallery(items);
-      })
-      .catch(function () {
-        loading.textContent = '加载失败，请检查网络';
-        galleryLoading = false;
-      });
     } else {
       var whUrl = 'https://wallhaven.cc/api/v1/search?categories=' + wallhavenCat + '&purity=100&atleast=3840x2160&ratios=16x9&sorting=favorites&page=' + wallhavenPage;
       if (wallhavenQ) whUrl += '&q=' + encodeURIComponent(wallhavenQ);
       fetch(whUrl)
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        loading.style.display = 'none';
-        galleryLoaded = true;
-        galleryLoading = false;
-        wallhavenLastPage = data.meta && data.meta.last_page ? data.meta.last_page : 1;
-        if (wallhavenPage < wallhavenLastPage) {
-          galleryLoadMore.classList.remove('hidden');
-        }
-        var items = data.data.map(function (img) {
-          return {
-            thumb: img.thumbs.large,
-            full: img.path,
-            title: (img.category || '') + ' ' + (img.resolution || '')
-          };
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          loading.style.display = 'none';
+          galleryLoaded = true;
+          galleryLoading = false;
+          wallhavenLastPage = data.meta && data.meta.last_page ? data.meta.last_page : 1;
+          if (wallhavenPage < wallhavenLastPage) {
+            galleryLoadMore.classList.remove('hidden');
+          }
+          var items = data.data.map(function (img) {
+            return {
+              thumb: img.thumbs.large,
+              full: img.path,
+              title: (img.category || '') + ' ' + (img.resolution || '')
+            };
+          });
+          renderGallery(items, append);
+        })
+        .catch(function () {
+          loading.textContent = '加载失败，请检查网络';
+          galleryLoading = false;
         });
-        renderGallery(items, append);
-      })
-      .catch(function () {
-        loading.textContent = '加载失败，请检查网络';
-        galleryLoading = false;
-      });
     }
   }
 

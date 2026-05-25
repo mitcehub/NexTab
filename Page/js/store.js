@@ -34,7 +34,7 @@ export function getEngineOrder() {
   try {
     var raw = localStorage.getItem('mh_engine_order');
     if (raw) return JSON.parse(raw);
-  } catch (e) {}
+  } catch (e) { }
   return ENGINE_LIST.map(function (e) { return e.start; });
 }
 
@@ -134,7 +134,7 @@ export function applyConfig() {
   root.setProperty('--clock-fontsize', cfg('clock_fontsize') + 'px');
   root.setProperty('--clock-offset', cfg('clock_offset') + 'px');
 
-  var clockStyles = ['classic', 'glow', 'outline', 'shadow'];
+  var clockStyles = ['classic', 'glow', 'outline', 'shadow', 'gradient', 'hologram', 'lcd', 'neon'];
   clockStyles.forEach(function (s) { clockWrap.classList.remove('clock-' + s); });
   clockWrap.classList.add('clock-' + cfg('clock_style'));
 
@@ -145,7 +145,7 @@ export function applyConfig() {
   root.setProperty('--search-offset', cfg('search_offset') + 'px');
   root.setProperty('--search-site-gap', cfg('search_site_gap') + 'px');
 
-  var searchStyles = ['pill', 'glass', 'border', 'minimal'];
+  var searchStyles = ['pill', 'glass', 'border', 'minimal', 'neumorphism', 'spotlight', 'glowborder', 'acrylic'];
   searchStyles.forEach(function (s) { searchWrap.classList.remove('search-' + s); });
   searchWrap.classList.add('search-' + cfg('search_style'));
 
@@ -164,7 +164,7 @@ export function applyConfig() {
   root.setProperty('--site-gap', cfg('site_gap') + 'px');
   root.setProperty('--site-icon-img', Math.round(parseInt(cfg('site_size')) * 0.58) + 'px');
 
-  var siteStyles = ['round', 'card', 'outline', 'minimal'];
+  var siteStyles = ['round', 'card', 'outline', 'minimal', 'squircle', '3d', 'hoverglow', 'neumorphic'];
   siteStyles.forEach(function (s) { siteGrid.classList.remove('site-' + s); });
   siteGrid.classList.add('site-' + cfg('site_style'));
 

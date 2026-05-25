@@ -1161,14 +1161,14 @@ body {
 }
 
 .preset-row {
-  display: flex;
-  gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
   width: 100%;
 }
 
 .preset-btn {
-  flex: 1;
-  padding: 7px 0;
+  padding: 7px 4px;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.04);
@@ -1177,6 +1177,23 @@ body {
   cursor: pointer;
   transition: all 0.15s;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.suite-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+.suite-btn {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 7px 4px;
 }
 
 .preset-btn:hover {
@@ -1416,6 +1433,125 @@ body {
 .engine-sort-name {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+/* --- 新增时钟样式 --- */
+.clock-gradient #clock-time {
+  background: linear-gradient(135deg, #a855f7, #ec4899, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+}
+.clock-hologram #clock-time {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 
+    3px 0px 5px rgba(0,255,255,0.6), 
+    -3px 0px 5px rgba(255,0,255,0.6);
+  letter-spacing: 2px;
+}
+.clock-lcd #clock-time {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  letter-spacing: -2px;
+  color: #fff;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+.clock-neon #clock-time {
+  color: #fff;
+  text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #0ff,
+    0 0 40px #0ff,
+    0 0 80px #0ff;
+}
+
+/* --- 新增搜索框样式 --- */
+.search-neumorphism {
+  background: rgba(40, 40, 50, 0.4);
+  box-shadow: 
+    inset 6px 6px 12px rgba(0, 0, 0, 0.4),
+    inset -6px -6px 12px rgba(255, 255, 255, 0.05),
+    0 8px 24px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.search-spotlight {
+  background: rgba(20, 20, 30, 0.8);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.search-spotlight:focus-within {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 24px 50px -5px rgba(0, 0, 0, 1);
+}
+.search-glowborder {
+  background: rgba(10, 10, 15, 0.8);
+  position: relative;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.search-glowborder::before {
+  content: '';
+  position: absolute;
+  top: -2px; bottom: -2px; left: -2px; right: -2px;
+  background: linear-gradient(45deg, #ff007a, #7a00ff, #00d2ff, #00ffaa, #ff007a);
+  background-size: 400%;
+  z-index: -1;
+  border-radius: inherit;
+  animation: bg-glow 8s linear infinite;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+.search-glowborder:focus-within::before {
+  opacity: 1;
+}
+@keyframes bg-glow { 0% { background-position: 0 0; } 100% { background-position: 400% 0; } }
+.search-acrylic {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* --- 新增图标样式 --- */
+.site-squircle .site-item {
+  border-radius: min(30%, 20px) !important; 
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.site-3d .site-item {
+  transform-style: preserve-3d;
+  perspective: 500px;
+  background: rgba(255,255,255,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.site-3d .site-item:hover {
+  transform: translateY(-8px) rotateX(15deg) scale(1.05);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
+}
+.site-hoverglow .site-item {
+  background: rgba(20,20,30,0.4);
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s;
+}
+.site-hoverglow .site-item:hover {
+  background: rgba(255,255,255,0.15);
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.15);
+}
+.site-neumorphic .site-item {
+  background: rgba(40,40,50,0.2);
+  box-shadow: 
+    4px 4px 10px rgba(0,0,0,0.3),
+    -4px -4px 10px rgba(255,255,255,0.05);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.site-neumorphic .site-item:active {
+  box-shadow: 
+    inset 4px 4px 10px rgba(0,0,0,0.3),
+    inset -4px -4px 10px rgba(255,255,255,0.05);
+  transform: scale(0.96);
 }
 
 @media (max-width: 768px) {
