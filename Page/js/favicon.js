@@ -295,7 +295,13 @@ export function getFavicon(url) {
   }
 
   return getCached(cacheKey).then(function (cached) {
-    if (cached) return URL.createObjectURL(cached);
+    if (cached instanceof Blob) return URL.createObjectURL(cached);
+    if (cached) {
+      openDB().then(function (db) {
+        var tx = db.transaction(STORE_NAME, 'readwrite');
+        tx.objectStore(STORE_NAME).delete(cacheKey);
+      });
+    }
 
     return lookupLocalIcon(url).then(function (localUrl) {
       if (localUrl) return localUrl;

@@ -84,6 +84,19 @@ export function confirmEdit() {
   showToast(state.editingIndex >= 0 ? '已更新' : '已添加');
 }
 
+var letterColors = [
+  '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7',
+  '#DDA0DD', '#98D8C8', '#F7DC6F', '#BB8FCE', '#85C1E9',
+  '#F8C471', '#82E0AA', '#F1948A', '#85929E', '#73C6B6',
+  '#E59866', '#AED6F1', '#D7BDE2', '#A3E4D7', '#FAD7A0',
+  '#7FB3D8', '#C39BD3', '#76D7C4', '#F9E79F', '#B2BABB'
+];
+
+function getLetterColor(char) {
+  var code = char.charCodeAt(0) || 0;
+  return letterColors[code % letterColors.length];
+}
+
 export function renderSites() {
   var grid = document.getElementById('site-grid');
   grid.innerHTML = '';
@@ -105,9 +118,13 @@ export function renderSites() {
     img.alt = site.name;
 
     function showLetter() {
-      img.src = '';
+      img.style.display = 'none';
       iconWrap.classList.add('site-letter');
-      iconWrap.textContent = site.name.charAt(0);
+      var letterBg = document.createElement('span');
+      letterBg.className = 'site-letter-bg';
+      letterBg.textContent = site.name.charAt(0);
+      letterBg.style.background = getLetterColor(site.name.charAt(0));
+      iconWrap.appendChild(letterBg);
     }
 
     if (site.icon && /^https?:\/\//i.test(site.icon)) {

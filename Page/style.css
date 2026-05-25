@@ -308,18 +308,29 @@ body {
 }
 
 .site-icon-wrap.site-letter {
-  font-size: calc(var(--site-size) * 0.38);
-  font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.9);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  user-select: none;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .site-icon-wrap.site-letter img {
   display: none;
+}
+
+.site-letter-bg {
+  width: var(--site-icon-img);
+  height: var(--site-icon-img);
+  border-radius: var(--site-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(var(--site-size) * 0.48);
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  user-select: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  line-height: 1;
 }
 
 .site-name {
