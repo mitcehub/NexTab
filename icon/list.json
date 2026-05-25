@@ -4235,13 +4235,6 @@
     "bgColor": "#ffffff"
   },
   {
-    "title": "快传号",
-    "url": "kuaichuan.360kuai.com",
-    "domain": "kuaichuan.360kuai.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/kuaichuan.360kuai.com.svg",
-    "bgColor": null
-  },
-  {
     "title": "Google Gemini",
     "url": "gemini.google.com",
     "domain": "gemini.google.com",
