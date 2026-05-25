@@ -161,9 +161,35 @@
             </div>
           </div>
           <div class="settings-item">
-            <label>字号</label>
+            <label>时间字号</label>
             <input type="range" data-key="clock_fontsize" data-min="32" data-max="120" data-unit="px" data-default="72">
             <span class="range-value">72px</span>
+          </div>
+          <div class="settings-item" id="setting-clock_font">
+            <label>时间字体</label>
+            <div class="font-picker" id="clock-font-picker">
+              <div class="font-picker-trigger settings-select">
+                <span class="font-picker-preview">默认</span>
+                <svg class="font-picker-arrow" viewBox="0 0 10 6" width="10" height="6"><path d="M0 0l5 6 5-6z" fill="rgba(255,255,255,0.5)"/></svg>
+              </div>
+              <div class="font-picker-dropdown"></div>
+            </div>
+          </div>
+          <div class="settings-item">
+            <label>日期字号</label>
+            <input type="range" data-key="clock_date_fontsize" data-min="12" data-max="48" data-unit="px" data-default="16">
+            <span class="range-value">16px</span>
+          </div>
+          <div class="settings-item">
+            <label>日期格式</label>
+            <select class="settings-select" data-key="clock_date_format" data-default="MD">
+              <option value="MD">5月25日 星期三</option>
+              <option value="YMD">2026年5月25日 星期三</option>
+              <option value="MD_NUM">5/25 周三</option>
+              <option value="YMD_NUM">2026/5/25 周三</option>
+              <option value="MD_SHORT">5月25日 周三</option>
+              <option value="FULL">2026年5月25日 星期三</option>
+            </select>
           </div>
           <div class="settings-item">
             <label>垂直偏移</label>
@@ -175,11 +201,6 @@
 
       <div id="settings-page-search" class="settings-page">
         <div class="settings-group">
-          <div class="settings-item vertical">
-            <label>搜索引擎排序</label>
-            <div id="engine-sort-list"></div>
-          </div>
-          <div class="settings-divider"></div>
           <div class="settings-item vertical">
             <label>搜索框样式</label>
             <div class="preset-row" data-preset-group="search">
@@ -217,6 +238,11 @@
             <label>垂直偏移</label>
             <input type="range" data-key="search_offset" data-min="-150" data-max="150" data-unit="px" data-default="0">
             <span class="range-value">0px</span>
+          </div>
+          <div class="settings-divider"></div>
+          <div class="settings-item vertical">
+            <label>搜索引擎排序</label>
+            <div id="engine-sort-list"></div>
           </div>
         </div>
       </div>

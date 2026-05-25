@@ -59,7 +59,7 @@ export var DEFAULT_BG = 'https://www.bing.com/th?id=OHR.SichuanTea_ZH-CN67034378
 export var WALLPAPER_KEYS = ['mask_opacity', 'bg_blur', 'bg_fit'];
 
 export var CONFIG_DEFAULTS = {
-  clock_show: '1', clock_24h: '1', clock_seconds: '0', clock_fontsize: '72', clock_offset: '0', clock_style: 'classic',
+  clock_show: '1', clock_24h: '1', clock_seconds: '0', clock_fontsize: '72', clock_date_fontsize: '16', clock_date_format: 'MD', clock_font: '', clock_offset: '0', clock_style: 'classic',
   search_width: '680', search_height: '46', search_radius: '24', search_opacity: '12', search_offset: '0', search_style: 'pill',
   search_site_gap: '60',
   site_cols: '0', site_size: '60', site_radius: '27', site_opacity: '100', site_gap: '30',
@@ -68,7 +68,7 @@ export var CONFIG_DEFAULTS = {
 };
 
 export var CONFIG_BOUNDS = {
-  clock_fontsize: [32, 120], clock_offset: [-150, 150],
+  clock_fontsize: [32, 120], clock_date_fontsize: [12, 48], clock_offset: [-150, 150],
   search_width: [400, 1000], search_height: [36, 56], search_radius: [0, 28], search_opacity: [5, 80], search_offset: [-150, 150],
   search_site_gap: [20, 160],
   site_cols: [0, 15], site_size: [36, 72], site_radius: [0, 50], site_opacity: [20, 100], site_gap: [8, 36],
@@ -132,6 +132,8 @@ export function applyConfig() {
   clockWrap.classList.toggle('hidden', cfg('clock_show') !== '1');
 
   root.setProperty('--clock-fontsize', cfg('clock_fontsize') + 'px');
+  root.setProperty('--clock-date-fontsize', cfg('clock_date_fontsize') + 'px');
+  root.setProperty('--clock-font', cfg('clock_font') || 'inherit');
   root.setProperty('--clock-offset', cfg('clock_offset') + 'px');
 
   var clockStyles = ['classic', 'glow', 'outline', 'shadow', 'gradient', 'hologram', 'lcd', 'neon'];

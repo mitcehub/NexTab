@@ -72,6 +72,7 @@ export function initSettings() {
       row.querySelectorAll('.preset-btn').forEach(function (b) { b.classList.remove('active'); });
       this.classList.add('active');
       syncRadiusSetting();
+      syncClockFontSetting();
     });
   });
 
@@ -84,6 +85,7 @@ export function initSettings() {
       renderSites();
       showToast('套装已应用: ' + this.textContent);
       syncRadiusSetting();
+      syncClockFontSetting();
     });
   });
 
@@ -128,6 +130,117 @@ export function initSettings() {
     });
   });
 
+  document.querySelectorAll('select[data-key], input[data-key][list]').forEach(function (el) {
+    var key = el.dataset.key;
+    el.value = cfg(key);
+    el.addEventListener('change', function () {
+      cfgSet(key, this.value);
+      applyConfig();
+    });
+  });
+
+  // 字体列表（按字母排序）
+  var FONT_FALLBACK = [
+    'Arial', 'Arial Black', 'Calibri', 'Cambria', 'Candara', 'Comic Sans MS', 'Consolas',
+    'Courier New', 'Georgia', 'Gill Sans MT', 'Impact', 'Lucida Console',
+    'Microsoft JhengHei', 'Microsoft Sans Serif', 'Microsoft YaHei',
+    'MS Gothic', 'Segoe UI', 'SimHei', 'SimSun', 'Tahoma', 'Times New Roman',
+    'Trebuchet MS', 'Verdana',
+    'PingFang SC', 'Noto Sans SC', 'Noto Serif SC',
+    'Helvetica', 'Helvetica Neue', 'SF Pro',
+    'Hiragino Sans GB', 'STHeiti', 'STKaiti', 'KaiTi', 'FangSong',
+    'Ubuntu', 'DejaVu Sans', 'Liberation Sans', 'WenQuanYi Micro Hei'
+  ];
+
+  function isFontAvailable(fontName) {
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    var text = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    ctx.font = '72px "' + fontName + '", monospace';
+    var w1 = ctx.measureText(text).width;
+    ctx.font = '72px monospace';
+    var w2 = ctx.measureText(text).width;
+    return Math.abs(w1 - w2) > 1;
+  }
+
+
+  function initFontPicker() {
+    var picker = document.getElementById('clock-font-picker');
+    if (!picker) return;
+    var trigger = picker.querySelector('.font-picker-trigger');
+    var preview = picker.querySelector('.font-picker-preview');
+    var dropdown = picker.querySelector('.font-picker-dropdown');
+    if (dropdown.children.length > 0) return;
+
+    var def = document.createElement('div');
+    def.className = 'font-picker-option';
+    def.dataset.font = '';
+    def.textContent = '默认';
+    dropdown.appendChild(def);
+
+    var available = FONT_FALLBACK.filter(isFontAvailable);
+    if (available.length === 0) available = FONT_FALLBACK.slice(0, 10);
+    available.forEach(function (name) {
+      var opt = document.createElement('div');
+      opt.className = 'font-picker-option';
+      opt.dataset.font = name;
+      opt.textContent = name;
+      dropdown.appendChild(opt);
+    });
+
+    var root = document.documentElement;
+    var savedFont = cfg('clock_font');
+    if (savedFont) {
+      preview.textContent = savedFont;
+    }
+
+    function open() {
+      trigger.classList.add('open');
+      dropdown.classList.add('open');
+      var active = dropdown.querySelector('.font-picker-option.active');
+      if (active) active.scrollIntoView({ block: 'nearest' });
+      document.addEventListener('mousedown', closeOutside);
+    }
+
+    function close() {
+      trigger.classList.remove('open');
+      dropdown.classList.remove('open');
+      document.removeEventListener('mousedown', closeOutside);
+    }
+
+    function closeOutside(e) {
+      if (!picker.contains(e.target)) close();
+    }
+
+    trigger.addEventListener('click', function () {
+      if (dropdown.classList.contains('open')) { close(); } else { open(); }
+    });
+
+    dropdown.addEventListener('mouseover', function (e) {
+      var opt = e.target.closest('.font-picker-option');
+      if (!opt) return;
+      root.style.setProperty('--clock-font', opt.dataset.font || 'inherit');
+    });
+
+    dropdown.addEventListener('mouseleave', function () {
+      var saved = cfg('clock_font');
+      root.style.setProperty('--clock-font', saved || 'inherit');
+    });
+
+    dropdown.addEventListener('click', function (e) {
+      var opt = e.target.closest('.font-picker-option');
+      if (!opt) return;
+      var font = opt.dataset.font;
+      cfgSet('clock_font', font);
+      applyConfig();
+      dropdown.querySelectorAll('.font-picker-option').forEach(function (o) { o.classList.remove('active'); });
+      opt.classList.add('active');
+      preview.textContent = font || '默认';
+      close();
+    });
+  }
+  initFontPicker();
+
   function syncRadiusSetting() {
     var style = cfg('site_style');
     var row = document.getElementById('setting-site_radius');
@@ -160,6 +273,15 @@ export function initSettings() {
     }
   }
   syncRadiusSetting();
+
+  function syncClockFontSetting() {
+    var row = document.getElementById('setting-clock_font');
+    if (!row) return;
+    var style = cfg('clock_style');
+    var hideStyles = ['lcd'];
+    row.style.display = hideStyles.indexOf(style) !== -1 ? 'none' : '';
+  }
+  syncClockFontSetting();
 
   function getAllData() {
     var data = { sites: state.sites, engine: state.currentEngine };

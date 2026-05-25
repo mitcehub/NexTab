@@ -64,6 +64,9 @@ export function refreshSettingsUI() {
     el.value = val;
     el.nextElementSibling.textContent = formatRangeLabel(key, val, unit);
   });
+  document.querySelectorAll('select[data-key], input[data-key][list]').forEach(function (el) {
+    el.value = cfg(el.dataset.key);
+  });
   document.querySelectorAll('.preset-row').forEach(function (row) {
     var group = row.dataset.presetGroup;
     var currentStyle = cfg(group + '_style');
@@ -71,6 +74,19 @@ export function refreshSettingsUI() {
       btn.classList.toggle('active', btn.dataset.preset === currentStyle);
     });
   });
+  refreshFontPicker();
+}
+
+function refreshFontPicker() {
+  var picker = document.getElementById('clock-font-picker');
+  if (!picker) return;
+  var preview = picker.querySelector('.font-picker-preview');
+  var font = cfg('clock_font');
+  picker.querySelectorAll('.font-picker-option').forEach(function (opt) {
+    opt.classList.toggle('active', opt.dataset.font === font);
+  });
+  preview.textContent = font || '默认';
+  preview.style.fontFamily = '';
 }
 
 export function refreshBgFitUI() {

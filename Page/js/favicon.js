@@ -1,6 +1,7 @@
 var DB_NAME = 'mh_favicons';
 var STORE_NAME = 'icons';
 var EXPIRE_MS = 7 * 24 * 60 * 60 * 1000;
+var NO_ICON_EXPIRE_MS = 24 * 60 * 60 * 1000;
 var MIN_ICON_SIZE = 32;
 var MIN_BLOB_SIZE = 500;
 var HTML_SIZE_LIMIT = 384 * 1024;
@@ -70,13 +71,14 @@ function getCached(key) {
       var req = tx.objectStore(STORE_NAME).get(key);
       req.onsuccess = function () {
         var rec = req.result;
-        if (rec && rec.blob && (Date.now() - rec.ts < EXPIRE_MS)) {
-          resolve(rec.blob);
-        } else {
-          resolve(null);
+        if (!rec) { resolve(undefined); return; }
+        if (Date.now() - rec.ts >= (rec.noIcon ? NO_ICON_EXPIRE_MS : EXPIRE_MS)) {
+          resolve(undefined); return;
         }
+        if (rec.noIcon) resolve(null);
+        else resolve(rec.blob);
       };
-      req.onerror = function () { resolve(null); };
+      req.onerror = function () { resolve(undefined); };
     });
   });
 }
@@ -85,7 +87,8 @@ function setCached(key, blob) {
   return openDB().then(function (db) {
     return new Promise(function (resolve) {
       var tx = db.transaction(STORE_NAME, 'readwrite');
-      tx.objectStore(STORE_NAME).put({ blob: blob, ts: Date.now() }, key);
+      var record = blob ? { blob: blob, ts: Date.now() } : { noIcon: true, ts: Date.now() };
+      tx.objectStore(STORE_NAME).put(record, key);
       tx.oncomplete = function () { resolve(); };
       tx.onerror = function () { resolve(); };
     });
@@ -296,6 +299,7 @@ export function getFavicon(url) {
 
   return getCached(cacheKey).then(function (cached) {
     if (cached instanceof Blob) return URL.createObjectURL(cached);
+    if (cached === null) return '';
     if (cached) {
       openDB().then(function (db) {
         var tx = db.transaction(STORE_NAME, 'readwrite');
@@ -311,6 +315,7 @@ export function getFavicon(url) {
           setCached(cacheKey, blob);
           return URL.createObjectURL(blob);
         }
+        setCached(cacheKey, null);
         return '';
       });
     });
