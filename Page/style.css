@@ -1360,6 +1360,10 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+#site-grid.site-card .site-letter-bg {
+  border-radius: 6px;
+}
+
 #site-grid.site-card .site-item:hover .site-icon-wrap {
   background: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.15);

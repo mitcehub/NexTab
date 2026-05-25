@@ -22,6 +22,7 @@ export function initSettings() {
     } else {
       settingsBack.classList.remove('hidden');
     }
+    if (name !== 'main') syncPresetButtons();
   }
 
   settingsBtn.addEventListener('click', function () {
@@ -46,6 +47,18 @@ export function initSettings() {
   });
 
   initEngineSort();
+
+  function syncPresetButtons() {
+    document.querySelectorAll('.preset-row').forEach(function (row) {
+      var group = row.dataset.presetGroup;
+      if (!group) return;
+      var current = cfg(group + '_style');
+      row.querySelectorAll('.preset-btn').forEach(function (btn) {
+        btn.classList.toggle('active', btn.dataset.preset === current);
+      });
+    });
+  }
+  syncPresetButtons();
 
   document.querySelectorAll('.preset-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
