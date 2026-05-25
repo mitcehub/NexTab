@@ -44,9 +44,7 @@ function lookupLocalIcon(url) {
     if (host.indexOf('www.') === 0) host = host.substring(4);
     return loadIconMap().then(function (map) {
       var item = map[host];
-      if (item && item.icon) {
-        return ICON_REPO + '/' + item.icon;
-      }
+      if (item && item.icon) return item.icon;
       return null;
     });
   } catch (e) {

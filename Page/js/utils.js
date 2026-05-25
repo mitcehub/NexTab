@@ -43,7 +43,7 @@ export function getFaviconUrl(url) {
     if (host.indexOf('www.') === 0) host = host.substring(4);
     return _loadIconMap().then(function (map) {
       var item = map[host];
-      if (item && item.icon) return ICON_REPO + '/' + item.icon;
+      if (item && item.icon) return item.icon;
       return 'https://www.google.com/s2/favicons?domain=' + host + '&sz=64';
     });
   } catch (e) {
