@@ -58,6 +58,7 @@ export function initSettings() {
       renderSites();
       row.querySelectorAll('.preset-btn').forEach(function (b) { b.classList.remove('active'); });
       this.classList.add('active');
+      syncRadiusSetting();
     });
   });
 
@@ -69,6 +70,7 @@ export function initSettings() {
       refreshSettingsUI();
       renderSites();
       showToast('套装已应用: ' + this.textContent);
+      syncRadiusSetting();
     });
   });
 
@@ -112,6 +114,29 @@ export function initSettings() {
       }
     });
   });
+
+  function syncRadiusSetting() {
+    var style = cfg('site_style');
+    var row = document.getElementById('setting-site_radius');
+    var slider = row.querySelector('input[type="range"]');
+    var hideStyles = ['round', 'minimal', 'squircle', '3d', 'hoverglow', 'neumorphic'];
+    if (hideStyles.indexOf(style) !== -1) {
+      row.style.display = 'none';
+    } else {
+      row.style.display = '';
+      if (style === 'card') {
+        slider.max = '40';
+        if (parseInt(slider.value) > 40) {
+          slider.value = '40';
+          cfgSet('site_radius', '40');
+          slider.nextElementSibling.textContent = formatRangeLabel('site_radius', '40', '%');
+        }
+      } else {
+        slider.max = '50';
+      }
+    }
+  }
+  syncRadiusSetting();
 
   function getAllData() {
     var data = { sites: state.sites, engine: state.currentEngine };

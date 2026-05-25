@@ -132,9 +132,11 @@ export function renderSites() {
     };
     iconWrap.appendChild(img);
 
+    var siteStyle = cfg('site_style');
+    var maxLen = ['squircle', '3d', 'hoverglow', 'neumorphic'].indexOf(siteStyle) !== -1 ? 4 : 0;
     var name = document.createElement('span');
     name.className = 'site-name' + (showName ? '' : ' hidden');
-    name.textContent = site.name;
+    name.textContent = maxLen && site.name.length > maxLen ? site.name.slice(0, maxLen) : site.name;
 
     a.appendChild(iconWrap);
     a.appendChild(name);
