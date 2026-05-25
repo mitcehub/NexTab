@@ -1339,6 +1339,14 @@ body {
   box-shadow: none;
 }
 
+#site-grid.site-round .site-letter-bg {
+  border-radius: 50%;
+}
+
+#site-grid.site-round .site-icon-wrap img {
+  border-radius: 50%;
+}
+
 #site-grid.site-round .site-item:hover .site-icon-wrap {
   background: rgba(255, 255, 255, 0.18);
   border-color: rgba(255, 255, 255, 0.2);
@@ -1364,10 +1372,6 @@ body {
   backdrop-filter: none;
   border: 1.5px solid rgba(255, 255, 255, 0.3);
   box-shadow: none;
-}
-
-#site-grid.site-outline .site-icon-wrap.site-letter {
-  border: none;
 }
 
 #site-grid.site-outline .site-item:hover .site-icon-wrap {
@@ -1529,15 +1533,24 @@ body {
 
 /* --- 新增图标样式 --- */
 .site-squircle .site-item {
-  border-radius: min(30%, 20px) !important; 
-  background: rgba(255,255,255,0.08);
+  border-radius: var(--site-radius); 
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   gap: 4px;
+}
+.site-squircle .site-icon-wrap,
+.site-squircle .site-icon-wrap img,
+.site-squircle .site-letter-bg {
+  border-radius: var(--site-radius);
 }
 .site-3d .site-item {
   transform-style: preserve-3d;
   perspective: 500px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   gap: 4px;
 }

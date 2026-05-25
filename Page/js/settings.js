@@ -119,19 +119,29 @@ export function initSettings() {
     var style = cfg('site_style');
     var row = document.getElementById('setting-site_radius');
     var slider = row.querySelector('input[type="range"]');
-    var hideStyles = ['round', 'minimal', 'squircle', '3d', 'hoverglow', 'neumorphic'];
+    var hideStyles = ['round', 'minimal', '3d', 'hoverglow', 'neumorphic'];
     if (hideStyles.indexOf(style) !== -1) {
       row.style.display = 'none';
     } else {
       row.style.display = '';
       if (style === 'card') {
+        slider.min = '0';
         slider.max = '40';
         if (parseInt(slider.value) > 40) {
           slider.value = '40';
           cfgSet('site_radius', '40');
           slider.nextElementSibling.textContent = formatRangeLabel('site_radius', '40', '%');
         }
+      } else if (style === 'squircle') {
+        slider.min = '5';
+        slider.max = '50';
+        if (slider.value === '0' || slider.value === '27') {
+          slider.value = '8';
+          cfgSet('site_radius', '8');
+          slider.nextElementSibling.textContent = formatRangeLabel('site_radius', '8', '%');
+        }
       } else {
+        slider.min = '0';
         slider.max = '50';
       }
     }
