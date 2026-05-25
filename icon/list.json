@@ -350,13 +350,6 @@
     "bgColor": "#cc001b"
   },
   {
-    "title": "Bing 翻译",
-    "url": "http://www.bing.com/translator",
-    "domain": "bing.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/bing.com-1.svg",
-    "bgColor": "#168018"
-  },
-  {
     "title": "高德地图",
     "url": "http://www.amap.com",
     "domain": "amap.com",
@@ -2107,13 +2100,6 @@
     "bgColor": "#ff8866"
   },
   {
-    "title": "百度学术",
-    "url": "https://xueshu.baidu.com",
-    "domain": "xueshu.baidu.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/xueshu.baidu.com-1.svg",
-    "bgColor": "#fff"
-  },
-  {
     "title": "canva中文",
     "url": "https://www.canva.cn",
     "domain": "canva.cn",
@@ -2126,13 +2112,6 @@
     "domain": "npm.taobao.org",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/npm.taobao.org.png",
     "bgColor": ""
-  },
-  {
-    "title": "Github",
-    "url": "https://github.com",
-    "domain": "github.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/github.com-1.svg",
-    "bgColor": "#000"
   },
   {
     "title": "百度",
@@ -2161,13 +2140,6 @@
     "domain": "ibaotu.com",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ibaotu.com-1.png",
     "bgColor": ""
-  },
-  {
-    "title": "阿里云盘",
-    "url": "https://www.aliyundrive.com",
-    "domain": "aliyundrive.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/aliyundrive.com-1.svg",
-    "bgColor": "#7273ff"
   },
   {
     "title": "RuoYi文档",
@@ -2210,13 +2182,6 @@
     "domain": "yuanbao.tencent.com",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/yuanbao.tencent.com.png",
     "bgColor": "#ffffff"
-  },
-  {
-    "title": "即时设计AI",
-    "url": "https://js.design/ai",
-    "domain": "js.design",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/js.design-1.svg",
-    "bgColor": "#cf3d35"
   },
   {
     "title": "扣子",
@@ -2280,13 +2245,6 @@
     "domain": "coursera.org",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/coursera.org.svg",
     "bgColor": "#0558d3"
-  },
-  {
-    "title": "昵图网",
-    "url": "http://www.nipic.com",
-    "domain": "nipic.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nipic.com-1.svg",
-    "bgColor": "#dd137b"
   },
   {
     "title": "京麦工作台",
@@ -2651,13 +2609,6 @@
     "domain": "135editor.com",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/135editor.com.png",
     "bgColor": "#26354c"
-  },
-  {
-    "title": "Canva",
-    "url": "https://www.canva.com",
-    "domain": "canva.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/canva.com-1.svg",
-    "bgColor": "#0fbad3"
   },
   {
     "title": "思谋学术",
@@ -3066,13 +3017,6 @@
     "bgColor": "#444444"
   },
   {
-    "title": "V2EX",
-    "url": "http://v2ex.com",
-    "domain": "v2ex.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/v2ex.com-1.svg",
-    "bgColor": "#222222"
-  },
-  {
     "title": "36氪",
     "url": "https://www.36kr.com",
     "domain": "36kr.com",
@@ -3178,13 +3122,6 @@
     "bgColor": "#2677f8"
   },
   {
-    "title": "ZAKER",
-    "url": "http://www.myzaker.com",
-    "domain": "myzaker.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/myzaker.com-1.svg",
-    "bgColor": "#fb5151"
-  },
-  {
     "title": "doyoudo",
     "url": "http://doyoudo.com",
     "domain": "doyoudo.com",
@@ -3267,13 +3204,6 @@
     "domain": "yinfans.me",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/yinfans.me.svg",
     "bgColor": "#101010"
-  },
-  {
-    "title": "Teambition",
-    "url": "https://www.teambition.com/projects",
-    "domain": "teambition.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/teambition.com-1.svg",
-    "bgColor": "#494949"
   },
   {
     "title": "Bigjpg",
@@ -3962,13 +3892,6 @@
     "bgColor": ""
   },
   {
-    "title": "DeepL翻译",
-    "url": "https://www.deepl.com/zh/translator",
-    "domain": "deepl.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/deepl.com-1.svg",
-    "bgColor": "#fcfefb"
-  },
-  {
     "title": "Moment.js",
     "url": "http://momentjs.cn",
     "domain": "momentjs.cn",
@@ -4298,13 +4221,6 @@
     "bgColor": "#ffffff"
   },
   {
-    "title": "58图库",
-    "url": "https://www.58pic.com",
-    "domain": "58pic.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/58pic.com-1.svg",
-    "bgColor": "#00a46b"
-  },
-  {
     "title": "奇迹秀工具箱",
     "url": "https://www.qijishow.com/down/index.html",
     "domain": "qijishow.com",
@@ -4326,87 +4242,10 @@
     "bgColor": null
   },
   {
-    "title": "Backstage",
-    "url": "https://backstage.com",
-    "domain": "backstage.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/backstage_casting.svg",
-    "bgColor": "#000000"
-  },
-  {
-    "title": "F#",
-    "url": "https://foundation.fsharp.org/logo",
-    "domain": "foundation.fsharp.org",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/fsharp.svg",
-    "bgColor": "#378BBA"
-  },
-  {
-    "title": "Ferrari N.V.",
-    "url": "https://corporate.ferrari.com",
-    "domain": "corporate.ferrari.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ferrarinv.svg",
-    "bgColor": "#EB2E2C"
-  },
-  {
-    "title": "Graphite",
-    "url": "https://graphite.art/logo",
-    "domain": "graphite.art",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/graphite_editor.svg",
-    "bgColor": "#473A3A"
-  },
-  {
-    "title": "Handshake",
-    "url": "https://handshake.org",
-    "domain": "handshake.org",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/handshake_protocol.svg",
-    "bgColor": "#000000"
-  },
-  {
-    "title": "Hive",
-    "url": "https://hive.io/brand",
-    "domain": "hive.io",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/hive_blockchain.svg",
-    "bgColor": "#E31337"
-  },
-  {
-    "title": "Mongoose",
-    "url": "https://mongoose.ws",
-    "domain": "mongoose.ws",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mongoosedotws.svg",
-    "bgColor": "#F04D35"
-  },
-  {
-    "title": "Sat.1",
-    "url": "https://www.prosiebensat1.com/presse/downloads/logos",
-    "domain": "prosiebensat1.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/sat1.svg",
-    "bgColor": "#047DA3"
-  },
-  {
-    "title": "Sphere Online Judge",
-    "url": "https://www.spoj.com",
-    "domain": "spoj.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/spoj.svg",
-    "bgColor": "#337AB7"
-  },
-  {
-    "title": "Spring",
-    "url": "https://www.spri.ng",
-    "domain": "spri.ng",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/spring_creators.svg",
-    "bgColor": "#000000"
-  },
-  {
-    "title": "Tata Consultancy Services",
-    "url": "https://www.tcs.com",
-    "domain": "tcs.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tcs.svg",
-    "bgColor": "#EE3984"
-  },
-  {
-    "title": "Uniqlo",
-    "url": "https://www.uniqlo.com",
-    "domain": "uniqlo.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/uniqlo_ja.svg",
-    "bgColor": "#FF0000"
+    "title": "Google Gemini",
+    "url": "gemini.google.com",
+    "domain": "gemini.google.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/gemini.google.com.png",
+    "bgColor": null
   }
 ]
