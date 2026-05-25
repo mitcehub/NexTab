@@ -16,9 +16,39 @@ export function formatRangeLabel(key, val, unit) {
   return val;
 }
 
+var ICON_REPO = 'https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon';
+var _iconMap = null;
+var _iconMapLoading = null;
+
+function _loadIconMap() {
+  if (_iconMap) return Promise.resolve(_iconMap);
+  if (_iconMapLoading) return _iconMapLoading;
+  _iconMapLoading = fetch(ICON_REPO + '/list.json', { mode: 'cors', credentials: 'omit' })
+    .then(function (r) { return r.ok ? r.json() : []; })
+    .then(function (list) {
+      _iconMap = {};
+      list.forEach(function (item) {
+        if (item.domain && !_iconMap[item.domain]) _iconMap[item.domain] = item;
+      });
+      _iconMapLoading = null;
+      return _iconMap;
+    })
+    .catch(function () { _iconMapLoading = null; _iconMap = {}; return _iconMap; });
+  return _iconMapLoading;
+}
+
 export function getFaviconUrl(url) {
-  try { return 'https://www.google.com/s2/favicons?domain=' + new URL(url).hostname + '&sz=64'; }
-  catch (e) { return ''; }
+  try {
+    var host = new URL(url).hostname;
+    if (host.indexOf('www.') === 0) host = host.substring(4);
+    return _loadIconMap().then(function (map) {
+      var item = map[host];
+      if (item && item.icon) return ICON_REPO + '/' + item.icon;
+      return 'https://www.google.com/s2/favicons?domain=' + host + '&sz=64';
+    });
+  } catch (e) {
+    return Promise.resolve('');
+  }
 }
 
 export function refreshSettingsUI() {

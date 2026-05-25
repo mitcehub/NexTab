@@ -29,7 +29,7 @@
   {
     "title": "微博",
     "url": "https://weibo.com",
-    "domain": "eibo.com",
+    "domain": "weibo.com",
     "icon": "icons/eibo.com.svg",
     "iconUrl": "https://icon.protab.cn/favicons/icon/be0f786dfc9dfc46.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/b6c8920ae92c254f.svg",
@@ -200,7 +200,7 @@
   {
     "title": "微信网页版",
     "url": "https://wx.qq.com",
-    "domain": "x.qq.com",
+    "domain": "wx.qq.com",
     "icon": "icons/x.qq.com.svg",
     "iconUrl": "https://icon.protab.cn/favicons/full/11f45bbeedb97ed4.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/2aa9ff75e905c71e.svg",
@@ -371,7 +371,7 @@
   {
     "title": "维基百科",
     "url": "https://www.wikipedia.org",
-    "domain": "ikipedia.org",
+    "domain": "wikipedia.org",
     "icon": "icons/ikipedia.org.svg",
     "iconUrl": "https://icon.protab.cn/favicons/icon/ef08c5f8098278fe.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/68e68cd875d10512.svg",
@@ -515,7 +515,7 @@
   {
     "title": "百度文库",
     "url": "http://wenku.baidu.com",
-    "domain": "enku.baidu.com",
+    "domain": "wenku.baidu.com",
     "icon": "icons/enku.baidu.com.svg",
     "iconUrl": "https://icon.protab.cn/favicons/full/e64a16fa23c067d9.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/1af99760aa31b975.svg",
@@ -785,7 +785,7 @@
   {
     "title": "美团外卖",
     "url": "http://waimai.meituan.com",
-    "domain": "aimai.meituan.com",
+    "domain": "waimai.meituan.com",
     "icon": "icons/aimai.meituan.com.png",
     "iconUrl": "https://icon.protab.cn/favicons/icon/9fda799b9eeea6fa.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/681d5f14899abb15.png",
@@ -1415,7 +1415,7 @@
   {
     "title": "小米社区",
     "url": "https://web.vip.miui.com/page/info/mio/",
-    "domain": "eb.vip.miui.com",
+    "domain": "web.vip.miui.com",
     "icon": "icons/eb.vip.miui.com.png",
     "iconUrl": "https://icon.protab.cn/favicons/icon/723937c50bb28aa3.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/0d6d4f4f4b4b2362.png",
@@ -1424,7 +1424,7 @@
   {
     "title": "WeCom",
     "url": "https://work.weixin.qq.com",
-    "domain": "ork.weixin.qq.com",
+    "domain": "work.weixin.qq.com",
     "icon": "icons/ork.weixin.qq.com.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/4e1ad6129d58d466.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/62f47932d88a5c10.png",
@@ -1910,7 +1910,7 @@
   {
     "title": "即刻",
     "url": "https://web.okjike.com",
-    "domain": "eb.okjike.com",
+    "domain": "web.okjike.com",
     "icon": "icons/eb.okjike.com.svg",
     "iconUrl": "https://icon.protab.cn/favicons/full/b415dc849ef57b00.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/42e9e5291bf889d2.svg",
@@ -2000,7 +2000,7 @@
   {
     "title": "微信读书",
     "url": "https://weread.qq.com",
-    "domain": "eread.qq.com",
+    "domain": "weread.qq.com",
     "icon": "icons/eread.qq.com.svg",
     "iconUrl": "https://icon.protab.cn/favicons/full/447455633d4744fa.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/cdec7e698edd527d.svg",
@@ -2171,7 +2171,7 @@
   {
     "title": "搜狗微信搜索",
     "url": "http://weixin.sogou.com",
-    "domain": "eixin.sogou.com",
+    "domain": "weixin.sogou.com",
     "icon": "icons/eixin.sogou.com.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/93685b11ec0c134c.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/c5ab6300b3ec0dd4.png",
@@ -2252,7 +2252,7 @@
   {
     "title": "天气网",
     "url": "http://www.weather.com.cn",
-    "domain": "eather.com.cn",
+    "domain": "weather.com.cn",
     "icon": "icons/eather.com.cn.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/2912713b229b2a60.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/03ae2236198cf205.png",
@@ -2261,7 +2261,7 @@
   {
     "title": "腾讯微云",
     "url": "http://www.weiyun.com",
-    "domain": "eiyun.com",
+    "domain": "weiyun.com",
     "icon": "icons/eiyun.com.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/0565d9bf08902104.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/698c50f6f2aef6f8.png",
@@ -2342,7 +2342,7 @@
   {
     "title": "三国杀OL",
     "url": "http://web.sanguosha.com",
-    "domain": "eb.sanguosha.com",
+    "domain": "web.sanguosha.com",
     "icon": "icons/eb.sanguosha.com.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/dc5a2a9726f20709.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/a2d33bac97d1533a.png",
@@ -2414,7 +2414,7 @@
   {
     "title": "WikiHow",
     "url": "https://wikihow.com",
-    "domain": "ikihow.com",
+    "domain": "wikihow.com",
     "icon": "icons/ikihow.com.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/5826879f7f85bb3f.png",
     "logoUrl": "",
@@ -2423,7 +2423,7 @@
   {
     "title": "华尔街日报",
     "url": "http://www.wsj.com",
-    "domain": "sj.com",
+    "domain": "wsj.com",
     "icon": "icons/sj.com.svg",
     "iconUrl": "https://icon.protab.cn/favicons/full/b02f52c6756c8375.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/ab34f925dec8f87b.svg",
@@ -2585,7 +2585,7 @@
   {
     "title": "问卷星",
     "url": "https://www.wjx.cn",
-    "domain": "jx.cn",
+    "domain": "wjx.cn",
     "icon": "icons/jx.cn.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/29fe9c8f9c6f4569.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/3a458110b22d6ece.png",
@@ -2603,7 +2603,7 @@
   {
     "title": "腾讯微云",
     "url": "https://www.weiyun.com",
-    "domain": "eiyun.com",
+    "domain": "weiyun.com",
     "icon": "icons/eiyun.com-1.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/f83e42b9d8788bd5.png",
     "logoUrl": "https://icon.protab.cn/favicons/full/f83e42b9d8788bd5.png",
@@ -2891,7 +2891,7 @@
   {
     "title": "AirDroid Web",
     "url": "http://web.airdroid.com",
-    "domain": "eb.airdroid.com",
+    "domain": "web.airdroid.com",
     "icon": "icons/eb.airdroid.com.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/7ac2cb99ed5e6429.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/6c8555b7d5082203.png",
@@ -3044,7 +3044,7 @@
   {
     "title": "Worktile",
     "url": "https://worktile.com/dashboard",
-    "domain": "orktile.com",
+    "domain": "worktile.com",
     "icon": "icons/orktile.com.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/9b6a36fdb02f92bd.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/cd58a609d0efc8be.png",
@@ -3053,7 +3053,7 @@
   {
     "title": "知识星球",
     "url": "https://wx.xiaomiquan.com",
-    "domain": "x.xiaomiquan.com",
+    "domain": "wx.xiaomiquan.com",
     "icon": "icons/x.xiaomiquan.com.svg",
     "iconUrl": "https://icon.protab.cn/favicons/full/af6c4a53bd820a16.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/cb88e4fba959a0ca.svg",
@@ -3350,7 +3350,7 @@
   {
     "title": "webpack",
     "url": "https://www.webpackjs.com",
-    "domain": "ebpackjs.com",
+    "domain": "webpackjs.com",
     "icon": "icons/ebpackjs.com.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/7bc561b201937ae7.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/38bb3185591eb9c4.png",
@@ -3611,7 +3611,7 @@
   {
     "title": "人人都是产品经理",
     "url": "http://www.woshipm.com",
-    "domain": "oshipm.com",
+    "domain": "woshipm.com",
     "icon": "icons/oshipm.com.svg",
     "iconUrl": "https://icon.protab.cn/favicons/full/386d92f3693fced7.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/1e2549c5da0723ab.svg",
@@ -3701,7 +3701,7 @@
   {
     "title": "文叔叔",
     "url": "https://www.wenshushu.cn",
-    "domain": "enshushu.cn",
+    "domain": "wenshushu.cn",
     "icon": "icons/enshushu.cn.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/2795513b979bd707.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/5297c646a75696eb.png",
@@ -4070,7 +4070,7 @@
   {
     "title": "WallpapersWide",
     "url": "http://wallpaperswide.com",
-    "domain": "allpaperswide.com",
+    "domain": "wallpaperswide.com",
     "icon": "icons/allpaperswide.com.svg",
     "iconUrl": "https://icon.protab.cn/favicons/icon/f07ffed8a0c8_1765183071180.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/c75135ed3724_1765183071080.svg",
@@ -4160,7 +4160,7 @@
   {
     "title": "Wallpaper Abyss",
     "url": "https://wall.alphacoders.com",
-    "domain": "all.alphacoders.com",
+    "domain": "wall.alphacoders.com",
     "icon": "icons/all.alphacoders.com.svg",
     "iconUrl": "https://icon.protab.cn/favicons/full/d2ad4509f6aba97e.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/3521d4c97b0ce0a2.svg",
@@ -4457,7 +4457,7 @@
   {
     "title": "超级简历WonderCV",
     "url": "http://www.wondercv.com",
-    "domain": "ondercv.com",
+    "domain": "wondercv.com",
     "icon": "icons/ondercv.com.svg",
     "iconUrl": "https://icon.protab.cn/favicons/full/11698a344e14ea5e.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/e9fc35917707b68c.svg",
@@ -4691,7 +4691,7 @@
   {
     "title": "华尔街见闻",
     "url": "http://wallstreetcn.com",
-    "domain": "allstreetcn.com",
+    "domain": "wallstreetcn.com",
     "icon": "icons/allstreetcn.com.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/14ffcf2ecb632e3e.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/6c7055abb9e04e89.png",
@@ -4799,7 +4799,7 @@
   {
     "title": "w3school",
     "url": "http://www.w3school.com.cn",
-    "domain": "3school.com.cn",
+    "domain": "w3school.com.cn",
     "icon": "icons/3school.com.cn.svg",
     "iconUrl": "https://icon.protab.cn/favicons/icon/2b6b133d4d5c7ba3.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/124283d66a0feffa.svg",
@@ -5042,7 +5042,7 @@
   {
     "title": "中国裁判文书网",
     "url": "http://wenshu.court.gov.cn",
-    "domain": "enshu.court.gov.cn",
+    "domain": "wenshu.court.gov.cn",
     "icon": "icons/enshu.court.gov.cn.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/61b125d43e595b8b.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/25b7ff72af102eb1.png",
@@ -5204,7 +5204,7 @@
   {
     "title": "小悟空",
     "url": "https://www.wukong.com",
-    "domain": "ukong.com",
+    "domain": "wukong.com",
     "icon": "icons/ukong.com.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/d3485011598716d8.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/f59ea601a65dff54.png",
@@ -5492,7 +5492,7 @@
   {
     "title": "wallhaven",
     "url": "https://wallhaven.cc",
-    "domain": "allhaven.cc",
+    "domain": "wallhaven.cc",
     "icon": "icons/allhaven.cc.svg",
     "iconUrl": "https://icon.protab.cn/favicons/icon/54cf15d3cb608601.svg",
     "logoUrl": "https://icon.protab.cn/favicons/logo/db7a0699eeb02183.svg",
@@ -5501,7 +5501,7 @@
   {
     "title": "w3cschool",
     "url": "https://www.w3cschool.cn",
-    "domain": "3cschool.cn",
+    "domain": "w3cschool.cn",
     "icon": "icons/3cschool.cn.png",
     "iconUrl": "https://icon.protab.cn/favicons/full/4c532d93063e0a97.png",
     "logoUrl": "https://icon.protab.cn/favicons/logo/b46af8577e134bc1.png",

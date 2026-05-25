@@ -5,6 +5,55 @@ var MIN_ICON_SIZE = 32;
 var MIN_BLOB_SIZE = 500;
 var HTML_SIZE_LIMIT = 384 * 1024;
 
+var ICON_REPO = 'https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon';
+var iconMap = null;
+var iconMapLoading = null;
+
+function loadIconMap() {
+  if (iconMap) return Promise.resolve(iconMap);
+  if (iconMapLoading) return iconMapLoading;
+  iconMapLoading = fetch(ICON_REPO + '/list.json', { mode: 'cors', credentials: 'omit' })
+    .then(function (r) {
+      if (!r.ok) throw new Error('list.json fetch failed');
+      return r.json();
+    })
+    .then(function (list) {
+      iconMap = {};
+      list.forEach(function (item) {
+        var domain = item.domain;
+        if (!domain) return;
+        if (!iconMap[domain]) {
+          iconMap[domain] = item;
+        }
+      });
+      iconMapLoading = null;
+      return iconMap;
+    })
+    .catch(function () {
+      iconMapLoading = null;
+      iconMap = {};
+      return iconMap;
+    });
+  return iconMapLoading;
+}
+
+function lookupLocalIcon(url) {
+  try {
+    var u = new URL(url);
+    var host = u.hostname;
+    if (host.indexOf('www.') === 0) host = host.substring(4);
+    return loadIconMap().then(function (map) {
+      var item = map[host];
+      if (item && item.icon) {
+        return ICON_REPO + '/' + item.icon;
+      }
+      return null;
+    });
+  } catch (e) {
+    return Promise.resolve(null);
+  }
+}
+
 function openDB() {
   return new Promise(function (resolve, reject) {
     var req = indexedDB.open(DB_NAME, 1);
@@ -89,6 +138,9 @@ function validateIcon(blob) {
 }
 
 function fetchIcon(url) {
+  if (typeof url === 'string' && url.startsWith('http://')) {
+    url = url.replace(/^http:\/\//i, 'https://');
+  }
   return fetch(url, { mode: 'cors', credentials: 'omit' })
     .then(function (r) {
       if (!r.ok) return null;
@@ -128,6 +180,13 @@ function parseIconPriority(href, sizes) {
   return 30;
 }
 
+function getAttrValue(tag, attr) {
+  var re = new RegExp(attr + '\\s*=\\s*(?:["\']([^"\']*)["\']|([^\\s>]+))', 'i');
+  var match = tag.match(re);
+  if (!match) return '';
+  return match[1] || match[2] || '';
+}
+
 function parseHtmlForIcons(html, baseUrl) {
   var icons = [];
   var headEnd = html.indexOf('</head>');
@@ -139,23 +198,20 @@ function parseHtmlForIcons(html, baseUrl) {
   while ((match = linkRe.exec(headHtml)) !== null) {
     var tag = match[0];
 
-    var relMatch = tag.match(/rel\s*=\s*["']([^"']+)["']/i);
-    if (!relMatch) continue;
-    var rel = relMatch[1].toLowerCase();
+    var rel = getAttrValue(tag, 'rel').toLowerCase();
+    if (!rel) continue;
     if (rel !== 'icon' && rel !== 'shortcut icon' && rel !== 'apple-touch-icon' && rel !== 'apple-touch-icon-precomposed') continue;
 
-    var hrefMatch = tag.match(/href\s*=\s*["']([^"']+)["']/i);
-    if (!hrefMatch) continue;
+    var href = getAttrValue(tag, 'href');
+    if (!href) continue;
 
-    var href = hrefMatch[1];
     try {
       href = new URL(href, baseUrl).href;
     } catch (e) {
       continue;
     }
 
-    var sizesMatch = tag.match(/sizes\s*=\s*["']([^"']+)["']/i);
-    var sizes = sizesMatch ? sizesMatch[1] : '';
+    var sizes = getAttrValue(tag, 'sizes');
 
     var priority = parseIconPriority(href, sizes);
     icons.push({ priority: priority, href: href });
@@ -166,6 +222,9 @@ function parseHtmlForIcons(html, baseUrl) {
 }
 
 function fetchPageHtml(url) {
+  if (typeof url === 'string' && url.startsWith('http://')) {
+    url = url.replace(/^http:\/\//i, 'https://');
+  }
   return fetch(url, { mode: 'cors', credentials: 'omit' })
     .then(function (r) {
       if (!r.ok) return null;
@@ -214,11 +273,11 @@ function getFaviconFromHtml(origin) {
 
     try {
       iconList.push({ priority: 35, href: new URL('/favicon.ico', result.url).href });
-    } catch (e) {}
+    } catch (e) { }
 
     try {
       iconList.push({ priority: 40, href: new URL('/apple-touch-icon.png', result.url).href });
-    } catch (e) {}
+    } catch (e) { }
 
     iconList.sort(function (a, b) { return a.priority - b.priority; });
 
@@ -240,12 +299,16 @@ export function getFavicon(url) {
   return getCached(cacheKey).then(function (cached) {
     if (cached) return URL.createObjectURL(cached);
 
-    return getFaviconFromHtml(origin).then(function (blob) {
-      if (blob) {
-        setCached(cacheKey, blob);
-        return URL.createObjectURL(blob);
-      }
-      return '';
+    return lookupLocalIcon(url).then(function (localUrl) {
+      if (localUrl) return localUrl;
+
+      return getFaviconFromHtml(origin).then(function (blob) {
+        if (blob) {
+          setCached(cacheKey, blob);
+          return URL.createObjectURL(blob);
+        }
+        return '';
+      });
     });
   });
 }
