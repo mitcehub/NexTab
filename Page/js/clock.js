@@ -3,7 +3,7 @@ import { cfg } from './store.js';
 var WEEKDAYS_FULL = ['日', '一', '二', '三', '四', '五', '六'];
 var WEEKDAYS_SHORT = ['日', '一', '二', '三', '四', '五', '六'];
 
-function formatDate(now, fmt) {
+export function formatDate(now, fmt) {
   var y = now.getFullYear();
   var m = now.getMonth() + 1;
   var d = now.getDate();

@@ -97,6 +97,7 @@ body {
 
 #clock-date {
   font-size: var(--clock-date-fontsize);
+  font-weight: var(--clock-date-weight);
   opacity: 0.7;
   margin-top: 8px;
 }
@@ -717,6 +718,23 @@ body {
   z-index: 100;
 }
 
+.font-picker-dropdown::-webkit-scrollbar {
+  width: 4px;
+}
+
+.font-picker-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.font-picker-dropdown::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+.font-picker-dropdown::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
 .font-picker-dropdown.open {
   display: block;
 }
@@ -1310,7 +1328,6 @@ body {
 }
 
 #clock-wrap.clock-classic #clock-date {
-  font-weight: 300;
   opacity: 0.7;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
@@ -1326,7 +1343,6 @@ body {
 }
 
 #clock-wrap.clock-glow #clock-date {
-  font-weight: 300;
   color: rgba(160, 200, 255, 0.7);
   text-shadow: 0 0 12px rgba(120, 180, 255, 0.3);
 }
@@ -1340,7 +1356,6 @@ body {
 }
 
 #clock-wrap.clock-outline #clock-date {
-  font-weight: 400;
   color: transparent;
   -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.5);
   text-shadow: none;
@@ -1357,7 +1372,6 @@ body {
 }
 
 #clock-wrap.clock-shadow #clock-date {
-  font-weight: 500;
   text-shadow:
     0 1px 0 rgba(0, 0, 0, 0.3),
     0 2px 4px rgba(0, 0, 0, 0.3);

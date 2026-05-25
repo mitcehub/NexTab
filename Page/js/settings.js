@@ -3,6 +3,7 @@ import { showToast, formatRangeLabel, refreshSettingsUI, refreshBgFitUI } from '
 import { renderSites } from './sites.js';
 import { applyPreset, applySuite } from './presets.js';
 import { renderEngineDropdown } from './search.js';
+import { formatDate } from './clock.js';
 
 export function initSettings() {
   var settingsBtn = document.getElementById('settings-btn');
@@ -130,6 +131,7 @@ export function initSettings() {
     });
   });
 
+
   document.querySelectorAll('select[data-key], input[data-key][list]').forEach(function (el) {
     var key = el.dataset.key;
     el.value = cfg(key);
@@ -240,6 +242,16 @@ export function initSettings() {
     });
   }
   initFontPicker();
+
+  function updateDateFormatOptions() {
+    var sel = document.querySelector('select[data-key="clock_date_format"]');
+    if (!sel) return;
+    var now = new Date();
+    Array.from(sel.options).forEach(function (opt) {
+      opt.textContent = formatDate(now, opt.value);
+    });
+  }
+  updateDateFormatOptions();
 
   function syncRadiusSetting() {
     var style = cfg('site_style');
