@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>IT之家</title>
+    <g id="IT之家" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill="#D20B20" x="0" y="0" width="128" height="128"></rect>
+        <path d="M92,41 C94.209139,41 96,42.790861 96,45 L96,81 C96,83.209139 94.209139,85 92,85 L80.780268,85 L80.780268,94.1560709 L69.4391164,85 L36,85 C33.790861,85 32,83.209139 32,81 L32,45 C32,42.790861 33.790861,41 36,41 L92,41 Z M56,47 L46,47 L46,79 L56,79 L56,47 Z M86,47 L61,47 L61,56 L69,56 L69,79 L79,79 L79,56 L86,56 L86,47 Z" id="1" fill="#FFFFFF"></path>
+    </g>
+</svg>
