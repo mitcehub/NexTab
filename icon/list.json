@@ -1116,7 +1116,7 @@
     "title": "优酷",
     "url": "https://www.youku.com",
     "domain": "youku.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/youku.com-1.png",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/youku.com.png",
     "bgColor": ""
   },
   {
@@ -1307,13 +1307,6 @@
     "domain": "daily.zhihu.com",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/daily.zhihu.com.png",
     "bgColor": ""
-  },
-  {
-    "title": "BBC",
-    "url": "https://www.bbc.com",
-    "domain": "bbc.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/bbc.com-1.png",
-    "bgColor": "#000000"
   },
   {
     "title": "Gitee",
@@ -1844,7 +1837,7 @@
     "title": "腾讯视频创作平台",
     "url": "https://v.qq.com/u/upload.html",
     "domain": "v.qq.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/v.qq.com-1.png",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/v.qq.com.png",
     "bgColor": ""
   },
   {
@@ -2016,13 +2009,6 @@
     "bgColor": "#ffdd00"
   },
   {
-    "title": "腾讯微云",
-    "url": "https://www.weiyun.com",
-    "domain": "weiyun.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/eiyun.com-1.png",
-    "bgColor": ""
-  },
-  {
     "title": "阿里云邮箱",
     "url": "https://mail.aliyun.com",
     "domain": "mail.aliyun.com",
@@ -2138,7 +2124,7 @@
     "title": "包图网_专注原创商用设计图片下载，免费设计素材模板独家图库",
     "url": "https://ibaotu.com",
     "domain": "ibaotu.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ibaotu.com-1.png",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ibaotu.com.png",
     "bgColor": ""
   },
   {
@@ -2187,7 +2173,7 @@
     "title": "扣子",
     "url": "https://movetab.jianyueku.com/api/bookmark/coze",
     "domain": "movetab.jianyueku.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/movetab.jianyueku.com-2.png",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/movetab.jianyueku.com.png",
     "bgColor": "#fff"
   },
   {
@@ -3559,7 +3545,7 @@
     "title": "Stack Overflow",
     "url": "https://stackoverflow.com",
     "domain": "stackoverflow.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/stackoverflow.com-1.png",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/stackoverflow.com.png",
     "bgColor": ""
   },
   {
@@ -3745,13 +3731,6 @@
     "bgColor": "#fff"
   },
   {
-    "title": "远景论坛",
-    "url": "http://bbs.pcbeta.com",
-    "domain": "bbs.pcbeta.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/bbs.pcbeta.com-1.png",
-    "bgColor": "#267ad0"
-  },
-  {
     "title": "Mikutap",
     "url": "https://aidn.jp/mikutap",
     "domain": "aidn.jp",
@@ -3846,7 +3825,7 @@
     "title": "AppSolution",
     "url": "https://www.ifanr.com/app",
     "domain": "ifanr.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ifanr.com-1.png",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ifanr.com.png",
     "bgColor": "#121212"
   },
   {
@@ -7338,13 +7317,6 @@
   {
     "title": "Linode",
     "url": "linode.com/docs",
-    "domain": "linode.com",
-    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/linode.com.png",
-    "bgColor": null
-  },
-  {
-    "title": "Linode",
-    "url": "linode.com",
     "domain": "linode.com",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/linode.com.png",
     "bgColor": null
