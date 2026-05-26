@@ -6746,5 +6746,1356 @@
     "domain": "zotero.org",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/zotero.org.png",
     "bgColor": null
+  },
+  {
+    "title": "龙腾网",
+    "url": "aa.com",
+    "domain": "aa.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/aa.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "accuweather",
+    "url": "accuweather.com",
+    "domain": "accuweather.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/accuweather.com.png",
+    "bgColor": "#ed2d20"
+  },
+  {
+    "title": "ADP Portal",
+    "url": "adp.com",
+    "domain": "adp.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/adp.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Airbnb爱彼迎",
+    "url": "airbnb.com",
+    "domain": "airbnb.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/airbnb.com.png",
+    "bgColor": "#ff5a5e"
+  },
+  {
+    "title": "AMD",
+    "url": "amd.com",
+    "domain": "amd.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/amd.com.png",
+    "bgColor": "#000000"
+  },
+  {
+    "title": "玩Android",
+    "url": "android.com",
+    "domain": "android.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/android.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Angular",
+    "url": "angular.io",
+    "domain": "angular.io",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/angular.io.png",
+    "bgColor": null
+  },
+  {
+    "title": "Home \\ Anthropic",
+    "url": "anthropic.com",
+    "domain": "anthropic.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/anthropic.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Associated Press ",
+    "url": "apnews.com",
+    "domain": "apnews.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/apnews.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "armorgames.com",
+    "url": "armorgames.com",
+    "domain": "armorgames.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/armorgames.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "arstechnica.com",
+    "url": "arstechnica.com",
+    "domain": "arstechnica.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/arstechnica.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "autodesk.com",
+    "url": "autodesk.com",
+    "domain": "autodesk.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/autodesk.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "aws.amazon.com",
+    "url": "aws.amazon.com",
+    "domain": "aws.amazon.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/aws.amazon.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "band.us",
+    "url": "band.us",
+    "domain": "band.us",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/band.us.png",
+    "bgColor": null
+  },
+  {
+    "title": "bandcamp.com",
+    "url": "bandcamp.com",
+    "domain": "bandcamp.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/bandcamp.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "battle.net",
+    "url": "battle.net",
+    "domain": "battle.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/battle.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "Bitbucket",
+    "url": "bitbucket.org",
+    "domain": "bitbucket.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/bitbucket.org.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "bleacherreport.com",
+    "url": "bleacherreport.com",
+    "domain": "bleacherreport.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/bleacherreport.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Blender中文手册",
+    "url": "blender.org",
+    "domain": "blender.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/blender.org.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "Xbox",
+    "url": "box.com",
+    "domain": "box.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/box.com.png",
+    "bgColor": "#107c10"
+  },
+  {
+    "title": "Bulma",
+    "url": "bulma.io",
+    "domain": "bulma.io",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/bulma.io.png",
+    "bgColor": null
+  },
+  {
+    "title": "GeenMedical",
+    "url": "cal.com",
+    "domain": "cal.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cal.com.png",
+    "bgColor": "#00ba50"
+  },
+  {
+    "title": "chat.openai.com",
+    "url": "chat.openai.com",
+    "domain": "chat.openai.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/chat.openai.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Chase",
+    "url": "chase.com",
+    "domain": "chase.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/chase.com.png",
+    "bgColor": "#1079ca"
+  },
+  {
+    "title": "chatgpt.com",
+    "url": "chatgpt.com",
+    "domain": "chatgpt.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/chatgpt.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Chess.com - Play Chess Online - Free Games",
+    "url": "chess.com",
+    "domain": "chess.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/chess.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "App unavailable in region | Claude",
+    "url": "claude.ai",
+    "domain": "claude.ai",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/claude.ai.png",
+    "bgColor": null
+  },
+  {
+    "title": "谷歌云",
+    "url": "cloud.google.com",
+    "domain": "cloud.google.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cloud.google.com.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "Visual Studio代码 - 代码编辑。 重新定义",
+    "url": "code.visualstudio.com",
+    "domain": "code.visualstudio.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/code.visualstudio.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "codepen.io",
+    "url": "codepen.io",
+    "domain": "codepen.io",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/codepen.io.svg",
+    "bgColor": null
+  },
+  {
+    "title": "CodeSandbox",
+    "url": "codesandbox.io",
+    "domain": "codesandbox.io",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/codesandbox.io.png",
+    "bgColor": null
+  },
+  {
+    "title": "Color Hunt - Beautiful Color Palettes",
+    "url": "colorhunt.co",
+    "domain": "colorhunt.co",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/colorhunt.co.png",
+    "bgColor": "#000000"
+  },
+  {
+    "title": "coolors.co",
+    "url": "coolors.co",
+    "domain": "coolors.co",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/coolors.co.png",
+    "bgColor": null
+  },
+  {
+    "title": "The commons belongs to us all - Creative Commons",
+    "url": "creativecommons.org",
+    "domain": "creativecommons.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/creativecommons.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "Crunchyroll - My Queuecrunchyr",
+    "url": "crunchyroll.com",
+    "domain": "crunchyroll.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/crunchyroll.com.png",
+    "bgColor": "#f47521"
+  },
+  {
+    "title": "Credit Score",
+    "url": "creditkarma.com",
+    "domain": "creditkarma.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/creditkarma.com.png",
+    "bgColor": "#3ddb92"
+  },
+  {
+    "title": "css-tricks.com",
+    "url": "css-tricks.com",
+    "domain": "css-tricks.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/css-tricks.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "cvs.com",
+    "url": "cvs.com",
+    "domain": "cvs.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cvs.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "    Dark Sky       ",
+    "url": "darksky.net",
+    "domain": "darksky.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/darksky.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "DeepMind",
+    "url": "deepmind.com",
+    "domain": "deepmind.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/deepmind.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Deno",
+    "url": "deno.land",
+    "domain": "deno.land",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/deno.land.png",
+    "bgColor": null
+  },
+  {
+    "title": "DEV Community  👩‍💻👨‍💻",
+    "url": "dev.to",
+    "domain": "dev.to",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/dev.to.png",
+    "bgColor": null
+  },
+  {
+    "title": "Apple Developer",
+    "url": "developer.apple.com",
+    "domain": "developer.apple.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/developer.apple.com.png",
+    "bgColor": "#f3f3f3"
+  },
+  {
+    "title": "剑桥免费英语词典和同义词词典",
+    "url": "dictionary.cambridge.org",
+    "domain": "dictionary.cambridge.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/dictionary.cambridge.org.png",
+    "bgColor": "#1d2a57"
+  },
+  {
+    "title": "Discord - Group Chat That’s All Fun & Games",
+    "url": "discord.com",
+    "domain": "discord.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/discord.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "disneyplus.com",
+    "url": "disneyplus.com",
+    "domain": "disneyplus.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/disneyplus.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "eBay",
+    "url": "ebay.com",
+    "domain": "ebay.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ebay.com.png",
+    "bgColor": "#f7f7f7"
+  },
+  {
+    "title": "ello.co",
+    "url": "ello.co",
+    "domain": "ello.co",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ello.co.png",
+    "bgColor": null
+  },
+  {
+    "title": "Etsy",
+    "url": "etsy.com",
+    "domain": "etsy.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/etsy.com.png",
+    "bgColor": "#f45700"
+  },
+  {
+    "title": "expedia",
+    "url": "expedia.com",
+    "domain": "expedia.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/expedia.com.png",
+    "bgColor": "#ffcc00"
+  },
+  {
+    "title": "Express - 基于 Node.js 平台的 web 应用开发框架 | Express 中文文档",
+    "url": "expressjs.com",
+    "domain": "expressjs.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/expressjs.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "finance.yahoo.com",
+    "url": "finance.yahoo.com",
+    "domain": "finance.yahoo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/finance.yahoo.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Flickr",
+    "url": "flickr.com",
+    "domain": "flickr.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/flickr.com.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "Foreign Policy",
+    "url": "foreignpolicy.com",
+    "domain": "foreignpolicy.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/foreignpolicy.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Fortune",
+    "url": "fortune.com",
+    "domain": "fortune.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/fortune.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "图表绘制",
+    "url": "diagrams.net",
+    "domain": "diagrams.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/diagrams.net.png",
+    "bgColor": "#f08705"
+  },
+  {
+    "title": "ESPN",
+    "url": "espn.com",
+    "domain": "espn.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/espn.com.png",
+    "bgColor": "#dd0000"
+  },
+  {
+    "title": "Gandi.net - Gandi.net：网域名称、网页代管、SSL 凭证与电子信箱",
+    "url": "gandi.net",
+    "domain": "gandi.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/gandi.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "genius.com",
+    "url": "genius.com",
+    "domain": "genius.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/genius.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "git-scm.com",
+    "url": "git-scm.com",
+    "domain": "git-scm.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/git-scm.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "gitlab.com",
+    "url": "gitlab.com",
+    "domain": "gitlab.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/gitlab.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Glitch",
+    "url": "glitch.com",
+    "domain": "glitch.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/glitch.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "glassdoor.com",
+    "url": "glassdoor.com",
+    "domain": "glassdoor.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/glassdoor.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "grpc",
+    "url": "grpc.io",
+    "domain": "grpc.io",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/grpc.io.png",
+    "bgColor": null
+  },
+  {
+    "title": "Habitica",
+    "url": "habitica.com",
+    "domain": "habitica.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/habitica.com.png",
+    "bgColor": "#4e2a92"
+  },
+  {
+    "title": "American Honda Motor Co., Inc. - Official Site",
+    "url": "honda.com",
+    "domain": "honda.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/honda.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "HubSpot | Software & Tools for your Business - Homepage",
+    "url": "hubspot.com",
+    "domain": "hubspot.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/hubspot.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Hugging Face – The AI community building the future.",
+    "url": "huggingface.co",
+    "domain": "huggingface.co",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/huggingface.co.png",
+    "bgColor": null
+  },
+  {
+    "title": "hulu",
+    "url": "hulu.com",
+    "domain": "hulu.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/hulu.com.png",
+    "bgColor": "#262930"
+  },
+  {
+    "title": "hotels",
+    "url": "hotels.com",
+    "domain": "hotels.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/hotels.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "IMDB",
+    "url": "imdb.com",
+    "domain": "imdb.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/imdb.com.png",
+    "bgColor": "#f5c517"
+  },
+  {
+    "title": "icons8.com",
+    "url": "icons8.com",
+    "domain": "icons8.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/icons8.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Intel",
+    "url": "intel.com",
+    "domain": "intel.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/intel.com.png",
+    "bgColor": "#0070c5"
+  },
+  {
+    "title": "jsfiddle.net",
+    "url": "jsfiddle.net",
+    "domain": "jsfiddle.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/jsfiddle.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "jsDelivr - 开源CDN",
+    "url": "jsdelivr.com",
+    "domain": "jsdelivr.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/jsdelivr.com.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "keras.io",
+    "url": "keras.io",
+    "domain": "keras.io",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/keras.io.png",
+    "bgColor": null
+  },
+  {
+    "title": "kodi.tv",
+    "url": "kodi.tv",
+    "domain": "kodi.tv",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/kodi.tv.png",
+    "bgColor": null
+  },
+  {
+    "title": "kayak",
+    "url": "kayak.com",
+    "domain": "kayak.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/kayak.com.png",
+    "bgColor": "#ff690f"
+  },
+  {
+    "title": "LastPass",
+    "url": "lastpass.com",
+    "domain": "lastpass.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/lastpass.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "last.fm",
+    "url": "last.fm",
+    "domain": "last.fm",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/last.fm.png",
+    "bgColor": null
+  },
+  {
+    "title": "Laravel",
+    "url": "laravel.com",
+    "domain": "laravel.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/laravel.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Puzzles • lichess.org",
+    "url": "lichess.org",
+    "domain": "lichess.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/lichess.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "Letterboxd",
+    "url": "letterboxd.com",
+    "domain": "letterboxd.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/letterboxd.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Linear – The system for product development",
+    "url": "linear.app",
+    "domain": "linear.app",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/linear.app.jpg",
+    "bgColor": null
+  },
+  {
+    "title": "Linode",
+    "url": "linode.com/docs",
+    "domain": "linode.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/linode.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Linode",
+    "url": "linode.com",
+    "domain": "linode.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/linode.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Logseq: Your joyful, private digital garden",
+    "url": "logseq.com",
+    "domain": "logseq.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/logseq.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Lowe&apos;s",
+    "url": "lowes.com",
+    "domain": "lowes.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/lowes.com.png",
+    "bgColor": "#004990"
+  },
+  {
+    "title": "   ",
+    "url": "maps.google.com",
+    "domain": "maps.google.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/maps.google.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Mastodon",
+    "url": "mastodon.social",
+    "domain": "mastodon.social",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mastodon.social.png",
+    "bgColor": null
+  },
+  {
+    "title": "Macy&apos;s",
+    "url": "macys.com",
+    "domain": "macys.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/macys.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "mathoverflow.net",
+    "url": "mathoverflow.net",
+    "domain": "mathoverflow.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mathoverflow.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "HBO Max",
+    "url": "max.com",
+    "domain": "max.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/max.com.png",
+    "bgColor": "#5b1ce6"
+  },
+  {
+    "title": "Meet",
+    "url": "meet.google.com",
+    "domain": "meet.google.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/meet.google.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "MeWe",
+    "url": "mewe.com",
+    "domain": "mewe.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mewe.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "RealtimeBoard",
+    "url": "miro.com",
+    "domain": "miro.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/miro.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Mint",
+    "url": "mint.com",
+    "domain": "mint.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mint.com.png",
+    "bgColor": "#00a6a4"
+  },
+  {
+    "title": "MLB.TV",
+    "url": "mlb.com",
+    "domain": "mlb.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mlb.com.png",
+    "bgColor": "#031e42"
+  },
+  {
+    "title": "mongoosejs.com",
+    "url": "mongoosejs.com",
+    "domain": "mongoosejs.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mongoosejs.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "music.youtube.com",
+    "url": "music.youtube.com",
+    "domain": "music.youtube.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/music.youtube.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "music.apple.com",
+    "url": "music.apple.com",
+    "domain": "music.apple.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/music.apple.com.png",
+    "bgColor": null
+  },
+  {
+    "title": " NBA.com",
+    "url": "nba.com",
+    "domain": "nba.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nba.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "国家地理中文网",
+    "url": "nationalgeographic.com",
+    "domain": "nationalgeographic.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nationalgeographic.com.png",
+    "bgColor": "#fff"
+  },
+  {
+    "title": "netflix",
+    "url": "netflix.com",
+    "domain": "netflix.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/netflix.com.png",
+    "bgColor": "#fff"
+  },
+  {
+    "title": "news.ycombinator.com",
+    "url": "news.ycombinator.com",
+    "domain": "news.ycombinator.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/news.ycombinator.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "nextdoor.com",
+    "url": "nextdoor.com",
+    "domain": "nextdoor.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nextdoor.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "NGINX | F5",
+    "url": "nginx.com",
+    "domain": "nginx.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nginx.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "nike.com",
+    "url": "nike.com",
+    "domain": "nike.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nike.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "nodejs.org",
+    "url": "nodejs.org",
+    "domain": "nodejs.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nodejs.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "nounproject.com",
+    "url": "nounproject.com",
+    "domain": "nounproject.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nounproject.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "OK.ru",
+    "url": "ok.ru",
+    "domain": "ok.ru",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ok.ru.png",
+    "bgColor": "#ee8207"
+  },
+  {
+    "title": "Java 8 API",
+    "url": "oracle.com",
+    "domain": "oracle.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/oracle.com.png",
+    "bgColor": "#e53122"
+  },
+  {
+    "title": "Pandora",
+    "url": "pandora.com",
+    "domain": "pandora.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/pandora.com.png",
+    "bgColor": "#f4817b"
+  },
+  {
+    "title": "Parler",
+    "url": "parler.com",
+    "domain": "parler.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/parler.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "pCloud",
+    "url": "pcloud.com",
+    "domain": "pcloud.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/pcloud.com.png",
+    "bgColor": "#17bed0"
+  },
+  {
+    "title": "Create Easy Infographics, Repo",
+    "url": "piktochart.com",
+    "domain": "piktochart.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/piktochart.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "批改网",
+    "url": "pi.ai",
+    "domain": "pi.ai",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/pi.ai.png",
+    "bgColor": "#fd3c0d"
+  },
+  {
+    "title": "Pinterest",
+    "url": "pinterest.com",
+    "domain": "pinterest.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/pinterest.com.svg",
+    "bgColor": "#e60019"
+  },
+  {
+    "title": "play.google.com",
+    "url": "play.google.com",
+    "domain": "play.google.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/play.google.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "plex.tv",
+    "url": "plex.tv",
+    "domain": "plex.tv",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/plex.tv.png",
+    "bgColor": null
+  },
+  {
+    "title": "Pluto TV",
+    "url": "pluto.tv",
+    "domain": "pluto.tv",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/pluto.tv.png",
+    "bgColor": null
+  },
+  {
+    "title": "poki.com",
+    "url": "poki.com",
+    "domain": "poki.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/poki.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Pingdom",
+    "url": "pingdom.com",
+    "domain": "pingdom.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/pingdom.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "porkbun.com",
+    "url": "porkbun.com",
+    "domain": "porkbun.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/porkbun.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Postman",
+    "url": "postman.com",
+    "domain": "postman.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/postman.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Product Hunt",
+    "url": "producthunt.com",
+    "domain": "producthunt.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/producthunt.com.svg",
+    "bgColor": "#de5f34"
+  },
+  {
+    "title": "pytorch.org",
+    "url": "pytorch.org",
+    "domain": "pytorch.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/pytorch.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "Puma",
+    "url": "puma.com",
+    "domain": "puma.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/puma.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Replit",
+    "url": "replit.com",
+    "domain": "replit.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/replit.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "roamresearch.com",
+    "url": "roamresearch.com",
+    "domain": "roamresearch.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/roamresearch.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "robinhood.com",
+    "url": "robinhood.com",
+    "domain": "robinhood.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/robinhood.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Heroku",
+    "url": "roku.com",
+    "domain": "roku.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/roku.com.png",
+    "bgColor": "#430098"
+  },
+  {
+    "title": "烂番茄",
+    "url": "rottentomatoes.com",
+    "domain": "rottentomatoes.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/rottentomatoes.com.png",
+    "bgColor": "#f93106"
+  },
+  {
+    "title": "Salesforce: The Customer Company | Salesforce AP",
+    "url": "salesforce.com",
+    "domain": "salesforce.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/salesforce.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "云转换",
+    "url": "rt.com",
+    "domain": "rt.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/rt.com.svg",
+    "bgColor": "#e06047"
+  },
+  {
+    "title": "seekingalpha.com",
+    "url": "seekingalpha.com",
+    "domain": "seekingalpha.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/seekingalpha.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "sequelize.org",
+    "url": "sequelize.org",
+    "domain": "sequelize.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/sequelize.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "sephora.com",
+    "url": "sephora.com",
+    "domain": "sephora.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/sephora.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Shopify: The All-in-One Commerce Platform for Businesses - Shopify",
+    "url": "shopify.com",
+    "domain": "shopify.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/shopify.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Slack",
+    "url": "slack.com",
+    "domain": "slack.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/slack.com.png",
+    "bgColor": "#4a154b"
+  },
+  {
+    "title": "skyscanner",
+    "url": "skyscanner.net",
+    "domain": "skyscanner.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/skyscanner.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "SitePoint",
+    "url": "sitepoint.com",
+    "domain": "sitepoint.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/sitepoint.com.png",
+    "bgColor": "#4a4a4a"
+  },
+  {
+    "title": "SoundCloud",
+    "url": "soundcloud.com",
+    "domain": "soundcloud.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/soundcloud.com.png",
+    "bgColor": "#ff5300"
+  },
+  {
+    "title": "Spotify",
+    "url": "spotify.com",
+    "domain": "spotify.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/spotify.com.svg",
+    "bgColor": "#fff"
+  },
+  {
+    "title": "Southwest",
+    "url": "southwest.com",
+    "domain": "southwest.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/southwest.com.png",
+    "bgColor": "#304cb2"
+  },
+  {
+    "title": "squareup.com",
+    "url": "squareup.com",
+    "domain": "squareup.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/squareup.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "stackexchange.com",
+    "url": "stackexchange.com",
+    "domain": "stackexchange.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/stackexchange.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "stackblitz.com",
+    "url": "stackblitz.com",
+    "domain": "stackblitz.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/stackblitz.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Steam",
+    "url": "steampowered.com",
+    "domain": "steampowered.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/steampowered.com.svg",
+    "bgColor": "#000000"
+  },
+  {
+    "title": "Stripe | 金融基础设施，托举营收增长",
+    "url": "stripe.com",
+    "domain": "stripe.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/stripe.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "teams.microsoft.com",
+    "url": "teams.microsoft.com",
+    "domain": "teams.microsoft.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/teams.microsoft.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Target",
+    "url": "target.com",
+    "domain": "target.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/target.com.png",
+    "bgColor": "#cc0000"
+  },
+  {
+    "title": "Telegram Web",
+    "url": "telegram.org",
+    "domain": "telegram.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/telegram.org.svg",
+    "bgColor": "#2298d5"
+  },
+  {
+    "title": "The Athletic ",
+    "url": "theathletic.com",
+    "domain": "theathletic.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/theathletic.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "The Verge",
+    "url": "theverge.com",
+    "domain": "theverge.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/theverge.com.png",
+    "bgColor": "#000000"
+  },
+  {
+    "title": "TickTick",
+    "url": "ticktick.com",
+    "domain": "ticktick.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ticktick.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "tidal.com",
+    "url": "tidal.com",
+    "domain": "tidal.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tidal.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "TimeTree",
+    "url": "timetreeapp.com",
+    "domain": "timetreeapp.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/timetreeapp.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Todoist",
+    "url": "todoist.com",
+    "domain": "todoist.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/todoist.com.png",
+    "bgColor": "#e44332"
+  },
+  {
+    "title": "Trello",
+    "url": "trello.com",
+    "domain": "trello.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/trello.com.png",
+    "bgColor": "#0079bf"
+  },
+  {
+    "title": "tubitv.com",
+    "url": "tubitv.com",
+    "domain": "tubitv.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tubitv.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Tuts+",
+    "url": "tutsplus.com",
+    "domain": "tutsplus.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tutsplus.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Tumblr",
+    "url": "tumblr.com",
+    "domain": "tumblr.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tumblr.com.png",
+    "bgColor": "#2e3d52"
+  },
+  {
+    "title": "tv.apple.com",
+    "url": "tv.apple.com",
+    "domain": "tv.apple.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tv.apple.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "turo.com",
+    "url": "turo.com",
+    "domain": "turo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/turo.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Twitter",
+    "url": "twitter.com",
+    "domain": "twitter.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/twitter.com.svg",
+    "bgColor": "#000000"
+  },
+  {
+    "title": "uigradients.com",
+    "url": "uigradients.com",
+    "domain": "uigradients.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/uigradients.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Uptime Robot",
+    "url": "uptimerobot.com",
+    "domain": "uptimerobot.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/uptimerobot.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "U.S. Bank",
+    "url": "usbank.com",
+    "domain": "usbank.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/usbank.com.png",
+    "bgColor": "#000000"
+  },
+  {
+    "title": "优衣库",
+    "url": "uniqlo.com",
+    "domain": "uniqlo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/uniqlo.com.png",
+    "bgColor": "#eb3223"
+  },
+  {
+    "title": "UNPKG",
+    "url": "unpkg.com",
+    "domain": "unpkg.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/unpkg.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "unity",
+    "url": "unity.com",
+    "domain": "unity.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/unity.com.png",
+    "bgColor": "#000000"
+  },
+  {
+    "title": "Vercel: Build and deploy the best web experiences with the AI Cloud",
+    "url": "vercel.com",
+    "domain": "vercel.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/vercel.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "VK",
+    "url": "vk.com",
+    "domain": "vk.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/vk.com.png",
+    "bgColor": "#43678e"
+  },
+  {
+    "title": "Vice",
+    "url": "vice.com",
+    "domain": "vice.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/vice.com.png",
+    "bgColor": "#000000"
+  },
+  {
+    "title": "walmart.com",
+    "url": "walmart.com",
+    "domain": "walmart.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/walmart.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "vuejs.org",
+    "url": "vuejs.org",
+    "domain": "vuejs.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/vuejs.org.svg",
+    "bgColor": null
+  },
+  {
+    "title": "walgreens.com",
+    "url": "walgreens.com",
+    "domain": "walgreens.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/walgreens.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "中国天气网",
+    "url": "weather.com",
+    "domain": "weather.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/weather.com.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "My Sites - Webflow",
+    "url": "webflow.com",
+    "domain": "webflow.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/webflow.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "weheartit.com",
+    "url": "weheartit.com",
+    "domain": "weheartit.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/weheartit.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Whatsapp",
+    "url": "whatsapp.com",
+    "domain": "whatsapp.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/whatsapp.com.png",
+    "bgColor": "#123033"
+  },
+  {
+    "title": "SMCC Homework - Home",
+    "url": "weebly.com",
+    "domain": "weebly.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/weebly.com.png",
+    "bgColor": "#3576fd"
+  },
+  {
+    "title": "Wells Fargo",
+    "url": "wellsfargo.com",
+    "domain": "wellsfargo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wellsfargo.com.png",
+    "bgColor": "#d71e28"
+  },
+  {
+    "title": "Whimsical",
+    "url": "whimsical.com",
+    "domain": "whimsical.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/whimsical.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "wix.com",
+    "url": "wix.com",
+    "domain": "wix.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wix.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Wikimedia",
+    "url": "wikimedia.org",
+    "domain": "wikimedia.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wikimedia.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "WordPress.com：创建免费网站或博客",
+    "url": "wordpress.com",
+    "domain": "wordpress.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wordpress.com.png",
+    "bgColor": "#20749b"
+  },
+  {
+    "title": "Blog Tool, Publishing Platform, and CMS &#8211; WordPress.org",
+    "url": "wordpress.org",
+    "domain": "wordpress.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wordpress.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "wunderground.com",
+    "url": "wunderground.com",
+    "domain": "wunderground.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wunderground.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Twitter",
+    "url": "x.com",
+    "domain": "x.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/x.com.svg",
+    "bgColor": "#000000"
+  },
+  {
+    "title": "edX",
+    "url": "x.org",
+    "domain": "x.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/x.org.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "Zillow",
+    "url": "zillow.com",
+    "domain": "zillow.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/zillow.com.png",
+    "bgColor": "#006aff"
   }
 ]
