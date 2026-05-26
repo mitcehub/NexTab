@@ -4548,5 +4548,2203 @@
     "domain": "brilliant.org",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/brilliant.org.png",
     "bgColor": null
+  },
+  {
+    "title": "www.cartoonnetwork.com",
+    "url": "https://www.cartoonnetwork.com/games",
+    "domain": "cartoonnetwork.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cartoonnetwork.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.cbhb.com.cn",
+    "url": "https://www.cbhb.com.cn",
+    "domain": "cbhb.com.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cbhb.com.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.ccdi.gov.cn",
+    "url": "https://www.ccdi.gov.cn",
+    "domain": "ccdi.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ccdi.gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "央视网",
+    "url": "https://www.cctv.com",
+    "domain": "cctv.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cctv.com.svg",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "www.cdc.gov",
+    "url": "https://www.cdc.gov",
+    "domain": "cdc.gov",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cdc.gov.png",
+    "bgColor": null
+  },
+  {
+    "title": "中国经济网",
+    "url": "https://www.ce.cn",
+    "domain": "ce.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ce.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.cebbank.com",
+    "url": "https://www.cebbank.com",
+    "domain": "cebbank.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cebbank.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "CGTrader | 3D Free Model",
+    "url": "https://www.cgtrader.com",
+    "domain": "cgtrader.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cgtrader.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "ChatPDF",
+    "url": "https://www.chatpdf.com",
+    "domain": "chatpdf.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/chatpdf.com.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "Chegg",
+    "url": "https://www.chegg.com",
+    "domain": "chegg.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/chegg.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "法院门户网站",
+    "url": "https://www.chinacourt.org",
+    "domain": "chinacourt.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/chinacourt.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.chinatax.gov.cn",
+    "url": "https://www.chinatax.gov.cn",
+    "domain": "chinatax.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/chinatax.gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "兴业银行欢迎您",
+    "url": "https://www.cib.com.cn",
+    "domain": "cib.com.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cib.com.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.cisco.com",
+    "url": "https://www.cisco.com",
+    "domain": "cisco.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cisco.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.citationmachine.net",
+    "url": "https://www.citationmachine.net",
+    "domain": "citationmachine.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/citationmachine.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "中信网上银行_理财产品、申请信用卡、个人贷款-中信银行官网",
+    "url": "https://www.citicbank.com",
+    "domain": "citicbank.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/citicbank.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "ClickUp",
+    "url": "https://www.clickup.com",
+    "domain": "clickup.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/clickup.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "CNBC",
+    "url": "https://www.cnbc.com",
+    "domain": "cnbc.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cnbc.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.cnbeta.com",
+    "url": "https://www.cnbeta.com",
+    "domain": "cnbeta.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cnbeta.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "CNCF",
+    "url": "https://www.cncf.io",
+    "domain": "cncf.io",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cncf.io.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.cnn.com",
+    "url": "https://www.cnn.com",
+    "domain": "cnn.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cnn.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "央广网",
+    "url": "https://www.cnr.cn",
+    "domain": "cnr.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cnr.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "Cocos2d-JS",
+    "url": "https://www.cocos.com",
+    "domain": "cocos.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cocos.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.codecademy.com",
+    "url": "https://www.codecademy.com",
+    "domain": "codecademy.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/codecademy.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.coinbase.com",
+    "url": "https://www.coinbase.com",
+    "domain": "coinbase.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/coinbase.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.coindesk.com",
+    "url": "https://www.coindesk.com",
+    "domain": "coindesk.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/coindesk.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.coingecko.com",
+    "url": "https://www.coingecko.com",
+    "domain": "coingecko.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/coingecko.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Cryptocurrency Market Capitalizations | CoinMarketCap",
+    "url": "https://www.coinmarketcap.com",
+    "domain": "coinmarketcap.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/coinmarketcap.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "CollegeBoard.",
+    "url": "https://www.collegeboard.org",
+    "domain": "collegeboard.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/collegeboard.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.collinsdictionary.com",
+    "url": "https://www.collinsdictionary.com",
+    "domain": "collinsdictionary.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/collinsdictionary.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.columbia.edu",
+    "url": "https://www.columbia.edu",
+    "domain": "columbia.edu",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/columbia.edu.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.constantcontact.com",
+    "url": "https://www.constantcontact.com",
+    "domain": "constantcontact.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/constantcontact.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.coolmathgames.com",
+    "url": "https://www.coolmathgames.com",
+    "domain": "coolmathgames.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/coolmathgames.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "最高院",
+    "url": "https://www.court.gov.cn",
+    "domain": "court.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/court.gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "Do Not Enter",
+    "url": "https://www.crazygames.com",
+    "domain": "crazygames.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/crazygames.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.creditchina.gov.cn",
+    "url": "https://www.creditchina.gov.cn",
+    "domain": "creditchina.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/creditchina.gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.csrc.gov.cn",
+    "url": "https://www.csrc.gov.cn",
+    "domain": "csrc.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/csrc.gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.customs.gov.cn",
+    "url": "https://www.customs.gov.cn",
+    "domain": "customs.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/customs.gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "创业邦",
+    "url": "https://www.cyzone.cn",
+    "domain": "cyzone.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/cyzone.cn.png",
+    "bgColor": "#fd7400"
+  },
+  {
+    "title": "DaFont",
+    "url": "https://www.dafont.com",
+    "domain": "dafont.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/dafont.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.dailymotion.com",
+    "url": "https://www.dailymotion.com",
+    "domain": "dailymotion.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/dailymotion.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "大麦网",
+    "url": "https://www.damai.cn",
+    "domain": "damai.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/damai.cn.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "www.datacamp.com",
+    "url": "https://www.datacamp.com",
+    "domain": "datacamp.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/datacamp.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Debian",
+    "url": "https://www.debian.org",
+    "domain": "debian.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/debian.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "DeepSeek",
+    "url": "https://www.deepseek.com",
+    "domain": "deepseek.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/deepseek.com.svg",
+    "bgColor": "#fff"
+  },
+  {
+    "title": "Desmos",
+    "url": "https://www.desmos.com",
+    "domain": "desmos.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/desmos.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Destructoid",
+    "url": "https://www.destructoid.com",
+    "domain": "destructoid.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/destructoid.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.deviantart.com",
+    "url": "https://www.deviantart.com",
+    "domain": "deviantart.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/deviantart.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "敦煌网",
+    "url": "https://www.dhgate.com",
+    "domain": "dhgate.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/dhgate.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Dictionary.com | Find the Mean",
+    "url": "https://www.dictionary.com",
+    "domain": "dictionary.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/dictionary.com.png",
+    "bgColor": "#0f5ab6"
+  },
+  {
+    "title": "www.digitalocean.com",
+    "url": "https://www.digitalocean.com",
+    "domain": "digitalocean.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/digitalocean.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.djangoproject.com",
+    "url": "https://www.djangoproject.com",
+    "domain": "djangoproject.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/djangoproject.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.docker.com",
+    "url": "https://www.docker.com",
+    "domain": "docker.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/docker.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "DocuSign",
+    "url": "https://www.docusign.com",
+    "domain": "docusign.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/docusign.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.dogpile.com",
+    "url": "https://www.dogpile.com",
+    "domain": "dogpile.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/dogpile.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "懂车帝",
+    "url": "https://www.dongchedi.com",
+    "domain": "dongchedi.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/dongchedi.com.svg",
+    "bgColor": "#ffe101"
+  },
+  {
+    "title": "www.douguo.com",
+    "url": "https://www.douguo.com",
+    "domain": "douguo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/douguo.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.draw.io",
+    "url": "https://www.draw.io",
+    "domain": "draw.io",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/draw.io.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.dropbox.com",
+    "url": "https://www.dropbox.com",
+    "domain": "dropbox.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/dropbox.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.duckduckgo.com",
+    "url": "https://www.duckduckgo.com",
+    "domain": "duckduckgo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/duckduckgo.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.dy2018.com",
+    "url": "https://www.dy2018.com",
+    "domain": "dy2018.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/dy2018.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.dytt8.net",
+    "url": "https://www.dytt8.net",
+    "domain": "dytt8.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/dytt8.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.ea.com",
+    "url": "https://www.ea.com",
+    "domain": "ea.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ea.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.easybib.com",
+    "url": "https://www.easybib.com",
+    "domain": "easybib.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/easybib.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.economist.com",
+    "url": "https://www.economist.com",
+    "domain": "economist.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/economist.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "ecosia",
+    "url": "https://www.ecosia.org",
+    "domain": "ecosia.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ecosia.org.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "edX | Free online courses from the world's best universities",
+    "url": "https://www.edx.org",
+    "domain": "edx.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/edx.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "下载 Elastic 产品 | Elastic",
+    "url": "https://www.elastic.co",
+    "domain": "elastic.co",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/elastic.co.png",
+    "bgColor": null
+  },
+  {
+    "title": "全新高端女性门户网站 | ELLE 世界时装之苑杂志官方网站",
+    "url": "https://www.ellechina.com",
+    "domain": "ellechina.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ellechina.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.eol.cn",
+    "url": "https://www.eol.cn",
+    "domain": "eol.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/eol.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.epicgames.com",
+    "url": "https://www.epicgames.com",
+    "domain": "epicgames.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/epicgames.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.etoro.com",
+    "url": "https://www.etoro.com",
+    "domain": "etoro.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/etoro.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "DigitalFoundry",
+    "url": "https://www.eurogamer.net",
+    "domain": "eurogamer.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/eurogamer.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "印象笔记",
+    "url": "https://www.evernote.com",
+    "domain": "evernote.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/evernote.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Extreme",
+    "url": "https://www.extremenetworks.com",
+    "domain": "extremenetworks.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/extremenetworks.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.facebook.com",
+    "url": "https://www.facebook.com",
+    "domain": "facebook.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/facebook.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "www.fanatical.com",
+    "url": "https://www.fanatical.com",
+    "domain": "fanatical.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/fanatical.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.fidelity.com",
+    "url": "https://www.fidelity.com",
+    "domain": "fidelity.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/fidelity.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.figma.com",
+    "url": "https://www.figma.com",
+    "domain": "figma.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/figma.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "www.fliggy.com",
+    "url": "https://www.fliggy.com",
+    "domain": "fliggy.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/fliggy.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "www.flyme.cn",
+    "url": "https://www.flyme.cn",
+    "domain": "flyme.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/flyme.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.fonts.com",
+    "url": "https://www.fonts.com",
+    "domain": "fonts.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/fonts.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Forbes",
+    "url": "https://www.forbes.com",
+    "domain": "forbes.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/forbes.com.png",
+    "bgColor": "#181716"
+  },
+  {
+    "title": "www.forexfactory.com",
+    "url": "https://www.forexfactory.com",
+    "domain": "forexfactory.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/forexfactory.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "美国FoxNews",
+    "url": "https://www.foxnews.com",
+    "domain": "foxnews.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/foxnews.com.png",
+    "bgColor": "#003366"
+  },
+  {
+    "title": "www.freecodecamp.org",
+    "url": "https://www.freecodecamp.org",
+    "domain": "freecodecamp.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/freecodecamp.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "Free vectors, photos and PSD Downloads | Freepik",
+    "url": "https://www.freepik.com",
+    "domain": "freepik.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/freepik.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Financial Times",
+    "url": "https://www.ft.com",
+    "domain": "ft.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ft.com.png",
+    "bgColor": "#fdcfb1"
+  },
+  {
+    "title": "风行网-中国领先的新一代视频平台",
+    "url": "https://www.fun.tv",
+    "domain": "fun.tv",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/fun.tv.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.funbrain.com",
+    "url": "https://www.funbrain.com",
+    "domain": "funbrain.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/funbrain.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.gamespot.com",
+    "url": "https://www.gamespot.com",
+    "domain": "gamespot.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/gamespot.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.ganji.com",
+    "url": "https://www.ganji.com",
+    "domain": "ganji.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ganji.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.gd.gov.cn",
+    "url": "https://www.gd.gov.cn",
+    "domain": "gd.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/gd.gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.geekpark.net",
+    "url": "https://www.geekpark.net",
+    "domain": "geekpark.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/geekpark.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "跟谁学",
+    "url": "https://www.genshuixue.com",
+    "domain": "genshuixue.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/genshuixue.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.geogebra.org",
+    "url": "https://www.geogebra.org",
+    "domain": "geogebra.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/geogebra.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.gliffy.com",
+    "url": "https://www.gliffy.com",
+    "domain": "gliffy.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/gliffy.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.godaddy.com",
+    "url": "https://www.godaddy.com",
+    "domain": "godaddy.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/godaddy.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "国美(GOME)",
+    "url": "https://www.gome.com.cn",
+    "domain": "gome.com.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/gome.com.cn.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "www.google.com",
+    "url": "https://www.google.com",
+    "domain": "google.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/google.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "www.gov.cn",
+    "url": "https://www.gov.cn",
+    "domain": "gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "Grammarly",
+    "url": "https://www.grammarly.com",
+    "domain": "grammarly.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/grammarly.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Green man gaming",
+    "url": "https://www.greenmangaming.com",
+    "domain": "greenmangaming.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/greenmangaming.com.png",
+    "bgColor": "#00e205"
+  },
+  {
+    "title": "www.gsxt.gov.cn",
+    "url": "https://www.gsxt.gov.cn",
+    "domain": "gsxt.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/gsxt.gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.haodou.com",
+    "url": "https://www.haodou.com",
+    "domain": "haodou.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/haodou.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.healthcare.gov",
+    "url": "https://www.healthcare.gov",
+    "domain": "healthcare.gov",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/healthcare.gov.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.heroku.com",
+    "url": "https://www.heroku.com",
+    "domain": "heroku.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/heroku.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "汇丰中国",
+    "url": "https://www.hsbc.com.cn",
+    "domain": "hsbc.com.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/hsbc.com.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.huawei.com",
+    "url": "https://www.huawei.com",
+    "domain": "huawei.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/huawei.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "沪江网",
+    "url": "https://www.hujiang.com",
+    "domain": "hujiang.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/hujiang.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.humblebundle.com",
+    "url": "https://www.humblebundle.com",
+    "domain": "humblebundle.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/humblebundle.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "芒果TV",
+    "url": "https://www.hunantv.com",
+    "domain": "hunantv.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/hunantv.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.huobi.com",
+    "url": "https://www.huobi.com",
+    "domain": "huobi.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/huobi.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "www.ibm.com",
+    "url": "https://www.ibm.com",
+    "domain": "ibm.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ibm.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.icij.org",
+    "url": "https://www.icij.org",
+    "domain": "icij.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/icij.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.idp.com",
+    "url": "https://www.idp.com",
+    "domain": "idp.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/idp.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.ifttt.com",
+    "url": "https://www.ifttt.com",
+    "domain": "ifttt.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ifttt.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.ign.com",
+    "url": "https://www.ign.com",
+    "domain": "ign.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ign.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.imf.org",
+    "url": "https://www.imf.org",
+    "domain": "imf.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/imf.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.instagram.com",
+    "url": "https://www.instagram.com",
+    "domain": "instagram.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/instagram.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.integromat.com",
+    "url": "https://www.integromat.com",
+    "domain": "integromat.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/integromat.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.investing.com",
+    "url": "https://www.investing.com",
+    "domain": "investing.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/investing.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "IRS Direct Pay",
+    "url": "https://www.irs.gov",
+    "domain": "irs.gov",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/irs.gov.png",
+    "bgColor": null
+  },
+  {
+    "title": "italki",
+    "url": "https://www.italki.com",
+    "domain": "italki.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/italki.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "JetBrains.com",
+    "url": "https://www.jetbrains.com",
+    "domain": "jetbrains.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/jetbrains.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.jin10.com",
+    "url": "https://www.jin10.com",
+    "domain": "jin10.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/jin10.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.jinse.com",
+    "url": "https://www.jinse.com",
+    "domain": "jinse.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/jinse.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "网易考拉",
+    "url": "https://www.kaola.com",
+    "domain": "kaola.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/kaola.com.png",
+    "bgColor": "#ff2236"
+  },
+  {
+    "title": "可可英语",
+    "url": "https://www.kekenet.com",
+    "domain": "kekenet.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/kekenet.com.png",
+    "bgColor": "#63b93d"
+  },
+  {
+    "title": "www.kernel.org",
+    "url": "https://www.kernel.org",
+    "domain": "kernel.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/kernel.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.khanacademy.org",
+    "url": "https://www.khanacademy.org",
+    "domain": "khanacademy.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/khanacademy.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.kongregate.com",
+    "url": "https://www.kongregate.com",
+    "domain": "kongregate.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/kongregate.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.ksyun.com",
+    "url": "https://www.ksyun.com",
+    "domain": "ksyun.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ksyun.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.kuaishou.com",
+    "url": "https://www.kuaishou.com",
+    "domain": "kuaishou.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/kuaishou.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "www.kucoin.com",
+    "url": "https://www.kucoin.com",
+    "domain": "kucoin.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/kucoin.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.lego.com",
+    "url": "https://www.lego.com/games",
+    "domain": "lego.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/lego.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "雷锋网",
+    "url": "https://www.leiphone.com",
+    "domain": "leiphone.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/leiphone.com.png",
+    "bgColor": "#e73f0a"
+  },
+  {
+    "title": "联想",
+    "url": "https://www.lenovo.com.cn",
+    "domain": "lenovo.com.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/lenovo.com.cn.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "www.lifeweek.com.cn",
+    "url": "https://www.lifeweek.com.cn",
+    "domain": "lifeweek.com.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/lifeweek.com.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "Linguee | Dictionary for German, French, Spanish, and more",
+    "url": "https://www.linguee.com",
+    "domain": "linguee.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/linguee.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.linkedin.com",
+    "url": "https://www.linkedin.com/learning",
+    "domain": "linkedin.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/linkedin.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "出国留学网",
+    "url": "https://www.liuxue86.com",
+    "domain": "liuxue86.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/liuxue86.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "龙珠直播longzhu.com-游戏直播平台",
+    "url": "https://www.longzhu.com",
+    "domain": "longzhu.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/longzhu.com.png",
+    "bgColor": "#fc4b26"
+  },
+  {
+    "title": "lucidchart",
+    "url": "https://www.lucidchart.com",
+    "domain": "lucidchart.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/lucidchart.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "同程",
+    "url": "https://www.ly.com",
+    "domain": "ly.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ly.com.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "www.lynda.com",
+    "url": "https://www.lynda.com",
+    "domain": "lynda.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/lynda.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "MailChimp",
+    "url": "https://www.mailchimp.com",
+    "domain": "mailchimp.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mailchimp.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.maoyan.com",
+    "url": "https://www.maoyan.com",
+    "domain": "maoyan.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/maoyan.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Math Games | Math Playground | Fun for Kids",
+    "url": "https://www.mathplayground.com",
+    "domain": "mathplayground.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mathplayground.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Mathway | Math Problem Solver",
+    "url": "https://www.mathway.com",
+    "domain": "mathway.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mathway.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Matplotlib 中文",
+    "url": "https://www.matplotlib.org",
+    "domain": "matplotlib.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/matplotlib.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.meishij.net",
+    "url": "https://www.meishij.net",
+    "domain": "meishij.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/meishij.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.meituan.com",
+    "url": "https://www.meituan.com",
+    "domain": "meituan.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/meituan.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.meizu.com",
+    "url": "https://www.meizu.com",
+    "domain": "meizu.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/meizu.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.mendeley.com",
+    "url": "https://www.mendeley.com",
+    "domain": "mendeley.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mendeley.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "韦氏大词典",
+    "url": "https://www.merriam-webster.com",
+    "domain": "merriam-webster.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/merriam-webster.com.png",
+    "bgColor": "#305f7a"
+  },
+  {
+    "title": "www.metacritic.com",
+    "url": "https://www.metacritic.com",
+    "domain": "metacritic.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/metacritic.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "咪咕-让今天更有趣",
+    "url": "https://www.migu.cn",
+    "domain": "migu.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/migu.cn.png",
+    "bgColor": "#e50077"
+  },
+  {
+    "title": "www.mindmeister.com",
+    "url": "https://www.mindmeister.com",
+    "domain": "mindmeister.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mindmeister.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Minecraft官方",
+    "url": "https://www.minecraft.net",
+    "domain": "minecraft.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/minecraft.net.png",
+    "bgColor": "#1fb53b"
+  },
+  {
+    "title": "Miniclip",
+    "url": "https://www.miniclip.com",
+    "domain": "miniclip.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/miniclip.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.mixer.com",
+    "url": "https://www.mixer.com",
+    "domain": "mixer.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mixer.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "教育部官网",
+    "url": "https://www.moe.gov.cn",
+    "domain": "moe.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/moe.gov.cn.png",
+    "bgColor": "#ff0000"
+  },
+  {
+    "title": "蘑菇街",
+    "url": "https://www.mogujie.com",
+    "domain": "mogujie.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mogujie.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.morningstar.com",
+    "url": "https://www.morningstar.com",
+    "domain": "morningstar.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/morningstar.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Firefox",
+    "url": "https://www.mozilla.org",
+    "domain": "mozilla.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mozilla.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.mps.gov.cn",
+    "url": "https://www.mps.gov.cn",
+    "domain": "mps.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mps.gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "MQL5 Reference",
+    "url": "https://www.mql5.com",
+    "domain": "mql5.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/mql5.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "MSNBC",
+    "url": "https://www.msnbc.com",
+    "domain": "msnbc.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/msnbc.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.namecheap.com",
+    "url": "https://www.namecheap.com",
+    "domain": "namecheap.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/namecheap.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "NASA",
+    "url": "https://www.nasa.gov",
+    "domain": "nasa.gov",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nasa.gov.png",
+    "bgColor": null
+  },
+  {
+    "title": "nbc news",
+    "url": "https://www.nbcnews.com",
+    "domain": "nbcnews.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nbcnews.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.ndrc.gov.cn",
+    "url": "https://www.ndrc.gov.cn",
+    "domain": "ndrc.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ndrc.gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.neea.edu.cn",
+    "url": "https://www.neea.edu.cn",
+    "domain": "neea.edu.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/neea.edu.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "Netlify",
+    "url": "https://www.netlify.com",
+    "domain": "netlify.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/netlify.com.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "www.nih.gov",
+    "url": "https://www.nih.gov",
+    "domain": "nih.gov",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nih.gov.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.nintendo.com",
+    "url": "https://www.nintendo.com",
+    "domain": "nintendo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nintendo.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Notion",
+    "url": "https://www.notion.com",
+    "domain": "notion.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/notion.com.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "NPR",
+    "url": "https://www.npr.org",
+    "domain": "npr.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/npr.org.png",
+    "bgColor": "#e6e6e6"
+  },
+  {
+    "title": "NumPy 中文",
+    "url": "https://www.numpy.org",
+    "domain": "numpy.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/numpy.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "nytimes",
+    "url": "https://www.nytimes.com",
+    "domain": "nytimes.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/nytimes.com.png",
+    "bgColor": "#111111"
+  },
+  {
+    "title": "www.offcn.com",
+    "url": "https://www.offcn.com",
+    "domain": "offcn.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/offcn.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.office.com",
+    "url": "https://www.office.com",
+    "domain": "office.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/office.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "www.oneplus.com",
+    "url": "https://www.oneplus.com",
+    "domain": "oneplus.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/oneplus.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.onlylady.com",
+    "url": "https://www.onlylady.com",
+    "domain": "onlylady.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/onlylady.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "OpenAI",
+    "url": "https://www.openai.com",
+    "domain": "openai.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/openai.com.png",
+    "bgColor": "#050526"
+  },
+  {
+    "title": "OPPO",
+    "url": "https://www.oppo.com",
+    "domain": "oppo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/oppo.com.png",
+    "bgColor": "#006b33"
+  },
+  {
+    "title": "Origin",
+    "url": "https://www.origin.com",
+    "domain": "origin.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/origin.com.png",
+    "bgColor": "#1e262c"
+  },
+  {
+    "title": "牛津词典",
+    "url": "https://www.oxfordlearnersdictionaries.com",
+    "domain": "oxfordlearnersdictionaries.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/oxfordlearnersdictionaries.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.panda.tv",
+    "url": "https://www.panda.tv",
+    "domain": "panda.tv",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/panda.tv.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.pbc.gov.cn",
+    "url": "https://www.pbc.gov.cn",
+    "domain": "pbc.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/pbc.gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "太平洋汽车",
+    "url": "https://www.pcauto.com.cn",
+    "domain": "pcauto.com.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/pcauto.com.cn.svg",
+    "bgColor": "#fd7525"
+  },
+  {
+    "title": "PC Gamer",
+    "url": "https://www.pcgamer.com",
+    "domain": "pcgamer.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/pcgamer.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.phonearena.com",
+    "url": "https://www.phonearena.com",
+    "domain": "phonearena.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/phonearena.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Plagscan",
+    "url": "https://www.plagscan.com",
+    "domain": "plagscan.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/plagscan.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "PlayStation",
+    "url": "https://www.playstation.com",
+    "domain": "playstation.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/playstation.com.png",
+    "bgColor": "#313131"
+  },
+  {
+    "title": "Unlimited Online Developer, IT and Cyber Security Training | Pluralsight",
+    "url": "https://www.pluralsight.com",
+    "domain": "pluralsight.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/pluralsight.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Polygon",
+    "url": "https://www.polygon.com",
+    "domain": "polygon.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/polygon.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "精品绿色便携软件-本站 (www.PortableSoft.org) 成立于 2008 年 4 月，主要推介精品/免费/实用的绿色软件、便携软件、实用教程等。每款软件都精心绿化、便携化，免安装、卸载彻底、不留痕迹。",
+    "url": "https://www.portablesoft.org",
+    "domain": "portablesoft.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/portablesoft.org.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "www.powtoon.com",
+    "url": "https://www.powtoon.com",
+    "domain": "powtoon.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/powtoon.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.pptv.com",
+    "url": "https://www.pptv.com",
+    "domain": "pptv.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/pptv.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.psbc.com",
+    "url": "https://www.psbc.com",
+    "domain": "psbc.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/psbc.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.purdue.edu",
+    "url": "https://www.purdue.edu",
+    "domain": "purdue.edu",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/purdue.edu.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.putclub.com",
+    "url": "https://www.putclub.com",
+    "domain": "putclub.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/putclub.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.python.org",
+    "url": "https://www.python.org",
+    "domain": "python.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/python.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.qiniu.com",
+    "url": "https://www.qiniu.com",
+    "domain": "qiniu.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/qiniu.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.qixin.com",
+    "url": "https://www.qixin.com",
+    "domain": "qixin.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/qixin.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.quanmin.tv",
+    "url": "https://www.quanmin.tv",
+    "domain": "quanmin.tv",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/quanmin.tv.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.quantopian.com",
+    "url": "https://www.quantopian.com",
+    "domain": "quantopian.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/quantopian.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.qwant.com",
+    "url": "https://www.qwant.com",
+    "domain": "qwant.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/qwant.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.r-project.org",
+    "url": "https://www.r-project.org",
+    "domain": "r-project.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/r-project.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.reddit.com",
+    "url": "https://www.reddit.com",
+    "domain": "reddit.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/reddit.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "www.redhat.com",
+    "url": "https://www.redhat.com",
+    "domain": "redhat.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/redhat.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.renderforest.com",
+    "url": "https://www.renderforest.com",
+    "domain": "renderforest.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/renderforest.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.researchgate.net",
+    "url": "https://www.researchgate.net",
+    "domain": "researchgate.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/researchgate.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.reuters.com",
+    "url": "https://www.reuters.com",
+    "domain": "reuters.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/reuters.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.reverso.net",
+    "url": "https://www.reverso.net",
+    "domain": "reverso.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/reverso.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "ROBLOX",
+    "url": "https://www.roblox.com",
+    "domain": "roblox.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/roblox.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Rock Paper Shotgun",
+    "url": "https://www.rockpapershotgun.com",
+    "domain": "rockpapershotgun.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/rockpapershotgun.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Rockstar Games",
+    "url": "https://www.rockstargames.com",
+    "domain": "rockstargames.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/rockstargames.com.png",
+    "bgColor": "#ffa400"
+  },
+  {
+    "title": "融360",
+    "url": "https://www.rong360.com",
+    "domain": "rong360.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/rong360.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.ruby-lang.org",
+    "url": "https://www.ruby-lang.org",
+    "domain": "ruby-lang.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ruby-lang.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "Rust",
+    "url": "https://www.rust-lang.org",
+    "domain": "rust-lang.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/rust-lang.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "中国三星电子 - 做中国",
+    "url": "https://www.samsung.com.cn",
+    "domain": "samsung.com.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/samsung.com.cn.png",
+    "bgColor": "#1328a0"
+  },
+  {
+    "title": "www.santiment.net",
+    "url": "https://www.santiment.net",
+    "domain": "santiment.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/santiment.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.schwab.com",
+    "url": "https://www.schwab.com",
+    "domain": "schwab.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/schwab.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.semanticscholar.org",
+    "url": "https://www.semanticscholar.org",
+    "domain": "semanticscholar.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/semanticscholar.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "实习僧",
+    "url": "https://www.shixiseng.com",
+    "domain": "shixiseng.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/shixiseng.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Shodan",
+    "url": "https://www.shodan.io",
+    "domain": "shodan.io",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/shodan.io.png",
+    "bgColor": null
+  },
+  {
+    "title": "新浪",
+    "url": "https://www.sina.com.cn",
+    "domain": "sina.com.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/sina.com.cn.svg",
+    "bgColor": "#e8353b"
+  },
+  {
+    "title": "www.skillshare.com",
+    "url": "https://www.skillshare.com",
+    "domain": "skillshare.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/skillshare.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Skype",
+    "url": "https://www.skype.com",
+    "domain": "skype.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/skype.com.png",
+    "bgColor": "#00aff0"
+  },
+  {
+    "title": "www.slideshare.net",
+    "url": "https://www.slideshare.net",
+    "domain": "slideshare.net",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/slideshare.net.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.smartisan.com",
+    "url": "https://www.smartisan.com",
+    "domain": "smartisan.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/smartisan.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Snapchat",
+    "url": "https://www.snapchat.com",
+    "domain": "snapchat.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/snapchat.com.png",
+    "bgColor": "#fffc00"
+  },
+  {
+    "title": "Solidot",
+    "url": "https://www.solidot.org",
+    "domain": "solidot.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/solidot.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "索尼中国",
+    "url": "https://www.sony.com",
+    "domain": "sony.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/sony.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.spdb.com.cn",
+    "url": "https://www.spdb.com.cn",
+    "domain": "spdb.com.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/spdb.com.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.sporcle.com",
+    "url": "https://www.sporcle.com",
+    "domain": "sporcle.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/sporcle.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.spp.gov.cn",
+    "url": "https://www.spp.gov.cn",
+    "domain": "spp.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/spp.gov.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.stanford.edu",
+    "url": "https://www.stanford.edu",
+    "domain": "stanford.edu",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/stanford.edu.png",
+    "bgColor": null
+  },
+  {
+    "title": "统计局",
+    "url": "https://www.stats.gov.cn",
+    "domain": "stats.gov.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/stats.gov.cn.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "证券之星",
+    "url": "https://www.stockstar.com",
+    "domain": "stockstar.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/stockstar.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "苏宁易购",
+    "url": "https://www.suning.com",
+    "domain": "suning.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/suning.com.svg",
+    "bgColor": "#fbfbec"
+  },
+  {
+    "title": "Symbolab ",
+    "url": "https://www.symbolab.com",
+    "domain": "symbolab.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/symbolab.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "深圳第一新闻门户网站---深圳新闻网",
+    "url": "https://www.sznews.com",
+    "domain": "sznews.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/sznews.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Tableau网络讲座",
+    "url": "https://www.tableau.com",
+    "domain": "tableau.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tableau.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Texas A&M",
+    "url": "https://www.tamu.edu",
+    "domain": "tamu.edu",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tamu.edu.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.tenpay.com",
+    "url": "https://www.tenpay.com",
+    "domain": "tenpay.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tenpay.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.tensorflow.org",
+    "url": "https://www.tensorflow.org",
+    "domain": "tensorflow.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tensorflow.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.theguardian.com",
+    "url": "https://www.theguardian.com",
+    "domain": "theguardian.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/theguardian.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "The Odin Project",
+    "url": "https://www.theodinproject.com",
+    "domain": "theodinproject.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/theodinproject.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Thesaurus",
+    "url": "https://www.thesaurus.com",
+    "domain": "thesaurus.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/thesaurus.com.png",
+    "bgColor": "#f3a536"
+  },
+  {
+    "title": "Thingiverse",
+    "url": "https://www.thingiverse.com",
+    "domain": "thingiverse.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/thingiverse.com.png",
+    "bgColor": "#2d88ff"
+  },
+  {
+    "title": "www.tianya.cn",
+    "url": "https://www.tianya.cn",
+    "domain": "tianya.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tianya.cn.svg",
+    "bgColor": null
+  },
+  {
+    "title": "www.tiktok.com",
+    "url": "https://www.tiktok.com",
+    "domain": "tiktok.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tiktok.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.timeshighereducation.com",
+    "url": "https://www.timeshighereducation.com",
+    "domain": "timeshighereducation.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/timeshighereducation.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.tmall.com",
+    "url": "https://www.tmall.com",
+    "domain": "tmall.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tmall.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "www.tmtpost.com",
+    "url": "https://www.tmtpost.com",
+    "domain": "tmtpost.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tmtpost.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.tradingview.com",
+    "url": "https://www.tradingview.com",
+    "domain": "tradingview.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tradingview.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.tuniu.com",
+    "url": "https://www.tuniu.com",
+    "domain": "tuniu.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/tuniu.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Twilio",
+    "url": "https://www.twilio.com",
+    "domain": "twilio.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/twilio.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "TypeScript",
+    "url": "https://www.typescriptlang.org",
+    "domain": "typescriptlang.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/typescriptlang.org.svg",
+    "bgColor": "#0b7fcf"
+  },
+  {
+    "title": "Ubisoft",
+    "url": "https://www.ubisoft.com",
+    "domain": "ubisoft.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ubisoft.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Ubuntu flavours | Ubuntu",
+    "url": "https://www.ubuntu.com",
+    "domain": "ubuntu.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ubuntu.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.ucloud.cn",
+    "url": "https://www.ucloud.cn",
+    "domain": "ucloud.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/ucloud.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "Udacity",
+    "url": "https://www.udacity.com",
+    "domain": "udacity.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/udacity.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.udemy.com",
+    "url": "https://www.udemy.com",
+    "domain": "udemy.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/udemy.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "The University of Maryland | A Preeminent Public Research University",
+    "url": "https://www.umd.edu",
+    "domain": "umd.edu",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/umd.edu.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.un.org",
+    "url": "https://www.un.org",
+    "domain": "un.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/un.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.unrealengine.com",
+    "url": "https://www.unrealengine.com",
+    "domain": "unrealengine.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/unrealengine.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "又拍云",
+    "url": "https://www.upyun.com",
+    "domain": "upyun.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/upyun.com.png",
+    "bgColor": "#00a0ff"
+  },
+  {
+    "title": "www.usatoday.com",
+    "url": "https://www.usatoday.com",
+    "domain": "usatoday.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/usatoday.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.usingenglish.com",
+    "url": "https://www.usingenglish.com",
+    "domain": "usingenglish.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/usingenglish.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "U.S.News",
+    "url": "https://www.usnews.com/education",
+    "domain": "usnews.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/usnews.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "USPS",
+    "url": "https://www.usps.com",
+    "domain": "usps.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/usps.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.vim.org",
+    "url": "https://www.vim.org",
+    "domain": "vim.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/vim.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "Vimeo | The high-quality home for video hosting and watching",
+    "url": "https://www.vimeo.com",
+    "domain": "vimeo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/vimeo.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.vip.com",
+    "url": "https://www.vip.com",
+    "domain": "vip.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/vip.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "VirusTotal",
+    "url": "https://www.virustotal.com",
+    "domain": "virustotal.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/virustotal.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "VMware",
+    "url": "https://www.vmware.com",
+    "domain": "vmware.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/vmware.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "VOA News",
+    "url": "https://www.voanews.com",
+    "domain": "voanews.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/voanews.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "VOGUE时尚网",
+    "url": "https://www.vogue.com.cn",
+    "domain": "vogue.com.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/vogue.com.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "vivo智能手机",
+    "url": "https://www.vivo.com",
+    "domain": "vivo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/vivo.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.vultr.com",
+    "url": "https://www.vultr.com",
+    "domain": "vultr.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/vultr.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "万方数据知识服务平台",
+    "url": "https://www.wanfangdata.com.cn",
+    "domain": "wanfangdata.com.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wanfangdata.com.cn.svg",
+    "bgColor": "#fff"
+  },
+  {
+    "title": "Washington Post",
+    "url": "https://www.washingtonpost.com",
+    "domain": "washingtonpost.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/washingtonpost.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.wdzj.com",
+    "url": "https://www.wdzj.com",
+    "domain": "wdzj.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wdzj.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.webcrawler.com",
+    "url": "https://www.webcrawler.com",
+    "domain": "webcrawler.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/webcrawler.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "WeVideo",
+    "url": "https://www.wevideo.com",
+    "domain": "wevideo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wevideo.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "白宫| whitehouse.gov",
+    "url": "https://www.whitehouse.gov",
+    "domain": "whitehouse.gov",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/whitehouse.gov.png",
+    "bgColor": null
+  },
+  {
+    "title": "WHO",
+    "url": "https://www.who.int",
+    "domain": "who.int",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/who.int.png",
+    "bgColor": null
+  },
+  {
+    "title": "University of Wisconsin–Madison",
+    "url": "https://www.wisc.edu",
+    "domain": "wisc.edu",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wisc.edu.png",
+    "bgColor": null
+  },
+  {
+    "title": "WolframAlpha",
+    "url": "https://www.wolframalpha.com",
+    "domain": "wolframalpha.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wolframalpha.com.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "www.womai.com",
+    "url": "https://www.womai.com",
+    "domain": "womai.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/womai.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.wordreference.com",
+    "url": "https://www.wordreference.com",
+    "domain": "wordreference.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wordreference.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.wrike.com",
+    "url": "https://www.wrike.com",
+    "domain": "wrike.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/wrike.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Xbox",
+    "url": "https://www.xbox.com",
+    "domain": "xbox.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/xbox.com.png",
+    "bgColor": "#107c10"
+  },
+  {
+    "title": "新东方网-一站式学习服务平台-新东方-新东方首页",
+    "url": "https://www.xdf.cn",
+    "domain": "xdf.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/xdf.cn.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.yahoo.com",
+    "url": "https://www.yahoo.com/finance",
+    "domain": "yahoo.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/yahoo.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "Yandex",
+    "url": "https://www.yandex.com",
+    "domain": "yandex.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/yandex.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.yicai.com",
+    "url": "https://www.yicai.com",
+    "domain": "yicai.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/yicai.com.svg",
+    "bgColor": null
+  },
+  {
+    "title": "www.yingjiesheng.com",
+    "url": "https://www.yingjiesheng.com",
+    "domain": "yingjiesheng.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/yingjiesheng.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.yoka.com",
+    "url": "https://www.yoka.com",
+    "domain": "yoka.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/yoka.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "有赞商家后台",
+    "url": "https://www.youzan.com",
+    "domain": "youzan.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/youzan.com.png",
+    "bgColor": "#ee0000"
+  },
+  {
+    "title": "www.zapier.com",
+    "url": "https://www.zapier.com",
+    "domain": "zapier.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/zapier.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.zdfans.com",
+    "url": "https://www.zdfans.com",
+    "domain": "zdfans.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/zdfans.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "智慧树",
+    "url": "https://www.zhihuishu.com",
+    "domain": "zhihuishu.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/zhihuishu.com.svg",
+    "bgColor": "#f4ebc8"
+  },
+  {
+    "title": "Features — Zipline 1.3.0 documentation",
+    "url": "https://www.zipline.io",
+    "domain": "zipline.io",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/zipline.io.png",
+    "bgColor": null
+  },
+  {
+    "title": "Zoho Mail",
+    "url": "https://www.zoho.com",
+    "domain": "zoho.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/zoho.com.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "纵横中文网|",
+    "url": "https://www.zongheng.com",
+    "domain": "zongheng.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/zongheng.com.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.zoomeye.org",
+    "url": "https://www.zoomeye.org",
+    "domain": "zoomeye.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/zoomeye.org.png",
+    "bgColor": null
+  },
+  {
+    "title": "www.zoom.us",
+    "url": "https://www.zoom.us",
+    "domain": "zoom.us",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/zoom.us.png",
+    "bgColor": null
+  },
+  {
+    "title": "Zotero",
+    "url": "https://www.zotero.org",
+    "domain": "zotero.org",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/zotero.org.png",
+    "bgColor": null
   }
 ]
