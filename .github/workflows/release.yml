@@ -21,20 +21,20 @@ jobs:
       - name: Package Chrome extension
         run: |
           cd Page
-          zip -r ../EZ-Page-Chrome.zip . -x "*.DS_Store"
+          zip -r ../NexTab-Chrome.zip . -x "*.DS_Store"
           cd ..
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          name: EZ-Page v${{ steps.version.outputs.VERSION }}
+          name: NexTab v${{ steps.version.outputs.VERSION }}
           body: |
-            ## EZ-Page v${{ steps.version.outputs.VERSION }}
+            ## NexTab v${{ steps.version.outputs.VERSION }}
 
             ### 下载安装
 
             **Chrome / Edge：**
-            1. 下载 `EZ-Page-Chrome.zip` 并解压
+            1. 下载 `NexTab-Chrome.zip` 并解压
             2. 打开 `chrome://extensions/`，开启「开发者模式」
             3. 点击「加载已解压的扩展程序」，选择解压后的文件夹
 
@@ -44,6 +44,6 @@ jobs:
             ### 更新内容
             请查看下方 commits 记录
           files: |
-            EZ-Page-Chrome.zip
+            NexTab-Chrome.zip
           draft: false
           prerelease: false

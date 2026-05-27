@@ -16,7 +16,7 @@ export function formatRangeLabel(key, val, unit) {
   return val;
 }
 
-var ICON_REPO = 'https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon';
+var ICON_REPO = 'https://raw.githubusercontent.com/mitcehub/NexTab/main/icon';
 var _iconMap = null;
 var _iconMapLoading = null;
 

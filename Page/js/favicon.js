@@ -6,7 +6,7 @@ var MIN_ICON_SIZE = 32;
 var MIN_BLOB_SIZE = 500;
 var HTML_SIZE_LIMIT = 384 * 1024;
 
-var ICON_REPO = 'https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon';
+var ICON_REPO = 'https://raw.githubusercontent.com/mitcehub/NexTab/main/icon';
 var iconMap = null;
 var iconMapLoading = null;
 
