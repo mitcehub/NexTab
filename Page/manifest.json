@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "EZ-Page",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "极简风格的新标签页，支持自定义快捷方式和 GitHub 同步",
   "chrome_url_overrides": {
     "newtab": "newtab.html"
