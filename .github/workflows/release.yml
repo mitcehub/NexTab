@@ -1,0 +1,58 @@
+name: Build & Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get version from tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+
+      - name: Package Chrome extension
+        run: |
+          cd Page
+          zip -r ../EZ-Page-Chrome.zip . -x "*.DS_Store"
+          cd ..
+
+      - name: Package Firefox extension
+        run: |
+          cd Page
+          zip -r ../EZ-Page-Firefox.zip . -x "*.DS_Store"
+          cd ..
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: EZ-Page v${{ steps.version.outputs.VERSION }}
+          body: |
+            ## EZ-Page v${{ steps.version.outputs.VERSION }}
+
+            ### 下载安装
+
+            **Chrome / Edge：**
+            1. 下载 `EZ-Page-Chrome.zip` 并解压
+            2. 打开 `chrome://extensions/`，开启「开发者模式」
+            3. 点击「加载已解压的扩展程序」，选择解压后的文件夹
+
+            **Firefox：**
+            1. 下载 `EZ-Page-Firefox.zip`
+            2. 访问 [AMO](https://addons.mozilla.org/) 搜索 EZ-Page 在线安装（推荐）
+            3. 或访问 `about:debugging` → 此 Firefox → 临时载入附加组件 → 选择 zip 中的 manifest.json
+
+            ### 更新内容
+            请查看下方 commits 记录
+          files: |
+            EZ-Page-Chrome.zip
+            EZ-Page-Firefox.zip
+          draft: false
+          prerelease: false
