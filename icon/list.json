@@ -8083,5 +8083,12 @@
     "domain": "k3.cn",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/k3.cn.png",
     "bgColor": "#ffffff"
+  },
+  {
+    "title": "17网",
+    "url": "https://gz.17zwd.com/",
+    "domain": "gz.17zwd.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/gz.17zwd.com.png",
+    "bgColor": "#ffffff"
   }
 ]
