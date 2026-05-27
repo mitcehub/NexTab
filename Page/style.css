@@ -60,6 +60,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, var(--mask-opacity));
+  -webkit-backdrop-filter: blur(var(--bg-blur));
   backdrop-filter: blur(var(--bg-blur));
   z-index: 1;
 }
@@ -153,6 +154,7 @@ body {
   top: calc(100% + 8px);
   left: 0;
   background: rgba(30, 30, 40, 0.95);
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -361,6 +363,7 @@ body {
 .site-item-add .site-icon-wrap {
   background: rgba(255, 255, 255, 0.06);
   border: 2px dashed rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
 
@@ -381,6 +384,7 @@ body {
 #context-menu {
   position: fixed;
   background: rgba(30, 30, 45, 0.96);
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -420,6 +424,7 @@ body {
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
@@ -442,6 +447,7 @@ body {
   width: 380px;
   height: 100%;
   background: rgba(20, 20, 30, 0.95);
+  -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   border-left: 1px solid rgba(255, 255, 255, 0.08);
   z-index: 200;
@@ -517,6 +523,10 @@ body {
 
 #settings-body::-webkit-scrollbar-thumb {
   background: transparent;
+}
+
+#settings-body {
+  scrollbar-width: none;
 }
 
 .settings-group {
@@ -735,6 +745,10 @@ body {
   background: rgba(255, 255, 255, 0.25);
 }
 
+.font-picker-dropdown {
+  scrollbar-width: thin;
+}
+
 .font-picker-dropdown.open {
   display: block;
 }
@@ -770,6 +784,8 @@ body {
 
 .settings-item input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -860,6 +876,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   z-index: 300;
   display: none;
@@ -873,6 +890,7 @@ body {
 
 #site-edit-box {
   background: rgba(30, 30, 45, 0.98);
+  -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -968,6 +986,7 @@ body {
   left: 50%;
   transform: translateX(-50%) translateY(-100px);
   background: rgba(30, 30, 45, 0.95);
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -991,6 +1010,7 @@ body {
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
@@ -1013,6 +1033,7 @@ body {
   width: 380px;
   height: 100%;
   background: rgba(20, 20, 30, 0.95);
+  -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   border-left: 1px solid rgba(255, 255, 255, 0.08);
   z-index: 200;
@@ -1088,6 +1109,10 @@ body {
 
 #wallpaper-body::-webkit-scrollbar-thumb {
   background: transparent;
+}
+
+#wallpaper-body {
+  scrollbar-width: none;
 }
 
 .wp-tab-content {
@@ -1379,6 +1404,7 @@ body {
 
 #search-wrap.search-pill {
   background: rgba(255, 255, 255, var(--search-opacity));
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -1391,6 +1417,7 @@ body {
 
 #search-wrap.search-glass {
   background: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(40px) saturate(1.5);
   backdrop-filter: blur(40px) saturate(1.5);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(255, 255, 255, 0.03);
@@ -1404,6 +1431,7 @@ body {
 
 #search-wrap.search-border {
   background: transparent;
+  -webkit-backdrop-filter: none;
   backdrop-filter: none;
   border: 1.5px solid rgba(255, 255, 255, 0.35);
   box-shadow: none;
@@ -1416,6 +1444,7 @@ body {
 
 #search-wrap.search-minimal {
   background: transparent;
+  -webkit-backdrop-filter: none;
   backdrop-filter: none;
   border: none;
   border-bottom: 1.5px solid rgba(255, 255, 255, 0.25);
@@ -1432,6 +1461,7 @@ body {
 
 #site-grid.site-round .site-icon-wrap {
   background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
@@ -1454,6 +1484,7 @@ body {
 
 #site-grid.site-card .site-icon-wrap {
   background: rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -1472,6 +1503,7 @@ body {
 
 #site-grid.site-outline .site-icon-wrap {
   background: transparent;
+  -webkit-backdrop-filter: none;
   backdrop-filter: none;
   border: 1.5px solid rgba(255, 255, 255, 0.3);
   box-shadow: none;
@@ -1484,6 +1516,7 @@ body {
 
 #site-grid.site-minimal .site-icon-wrap {
   background: transparent;
+  -webkit-backdrop-filter: none;
   backdrop-filter: none;
   border: none;
   box-shadow: none;
@@ -1558,6 +1591,7 @@ body {
 .clock-gradient #clock-time {
   background: linear-gradient(135deg, #a855f7, #ec4899, #ef4444);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
 }
@@ -1636,8 +1670,9 @@ body {
 
 /* --- 新增图标样式 --- */
 .site-squircle .site-item {
-  border-radius: var(--site-radius); 
+  border-radius: var(--site-radius);
   background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -1652,6 +1687,7 @@ body {
   transform-style: preserve-3d;
   perspective: 500px;
   background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;

@@ -8069,5 +8069,19 @@
     "domain": "zillow.com",
     "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/zillow.com.png",
     "bgColor": "#006aff"
+  },
+  {
+    "title": "搜款网",
+    "url": "https://www.vvic.com/",
+    "domain": "vvic.com",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/vvic.com.png",
+    "bgColor": "#ffffff"
+  },
+  {
+    "title": "开山网",
+    "url": "https://www.k3.cn/",
+    "domain": "k3.cn",
+    "icon": "https://raw.githubusercontent.com/mitcehub/EZ-Page/main/icon/icons/k3.cn.png",
+    "bgColor": "#ffffff"
   }
 ]
