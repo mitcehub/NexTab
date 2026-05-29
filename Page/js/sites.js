@@ -1,5 +1,5 @@
 import { state, cfg, save } from './store.js';
-import { showToast, getFaviconUrl } from './utils.js';
+import { showToast } from './utils.js';
 import { getFavicon } from './favicon.js';
 
 export function initContextMenu() {

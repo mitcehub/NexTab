@@ -6,36 +6,63 @@ var MIN_ICON_SIZE = 32;
 var MIN_BLOB_SIZE = 500;
 var HTML_SIZE_LIMIT = 384 * 1024;
 
-var ICON_REPO = 'https://raw.githubusercontent.com/mitcehub/NexTab/main/icon';
+var ICON_REPO_GITHUB = 'https://raw.githubusercontent.com/mitcehub/NexTab/main/icon';
+var ICON_REPO_JSDELIVR = 'https://cdn.jsdelivr.net/gh/mitcehub/NexTab@main/icon';
+var iconRepoActive = ICON_REPO_JSDELIVR;
 var iconMap = null;
 var iconMapLoading = null;
 
 function loadIconMap() {
   if (iconMap) return Promise.resolve(iconMap);
   if (iconMapLoading) return iconMapLoading;
-  iconMapLoading = fetch(ICON_REPO + '/list.json', { mode: 'cors', credentials: 'omit' })
-    .then(function (r) {
-      if (!r.ok) throw new Error('list.json fetch failed');
-      return r.json();
-    })
-    .then(function (list) {
-      iconMap = {};
-      list.forEach(function (item) {
-        var domain = item.domain;
-        if (!domain) return;
-        if (!iconMap[domain]) {
-          iconMap[domain] = item;
-        }
+
+  function parseList(list) {
+    iconMap = {};
+    list.forEach(function (item) {
+      var domain = item.domain;
+      if (!domain) return;
+      if (!iconMap[domain]) {
+        iconMap[domain] = item;
+      }
+    });
+    iconMapLoading = null;
+    return iconMap;
+  }
+
+  function tryFetch(repoUrl) {
+    return fetch(repoUrl + '/list.json', { mode: 'cors', credentials: 'omit' })
+      .then(function (r) {
+        if (!r.ok) throw new Error('list.json fetch failed');
+        return r.json();
       });
-      iconMapLoading = null;
-      return iconMap;
+  }
+
+  iconMapLoading = tryFetch(ICON_REPO_JSDELIVR)
+    .then(function (list) {
+      iconRepoActive = ICON_REPO_JSDELIVR;
+      return parseList(list);
+    })
+    .catch(function () {
+      return tryFetch(ICON_REPO_GITHUB).then(function (list) {
+        iconRepoActive = ICON_REPO_GITHUB;
+        return parseList(list);
+      });
     })
     .catch(function () {
       iconMapLoading = null;
       iconMap = {};
       return iconMap;
     });
+
   return iconMapLoading;
+}
+
+function toActiveRepoUrl(iconUrl) {
+  if (!iconUrl || iconRepoActive === ICON_REPO_GITHUB) return iconUrl;
+  if (iconUrl.indexOf(ICON_REPO_GITHUB) === 0) {
+    return iconUrl.replace(ICON_REPO_GITHUB, ICON_REPO_JSDELIVR);
+  }
+  return iconUrl;
 }
 
 function lookupLocalIcon(url) {
@@ -45,7 +72,7 @@ function lookupLocalIcon(url) {
     if (host.indexOf('www.') === 0) host = host.substring(4);
     return loadIconMap().then(function (map) {
       var item = map[host];
-      if (item && item.icon) return item.icon;
+      if (item && item.icon) return toActiveRepoUrl(item.icon);
       return null;
     });
   } catch (e) {
@@ -286,6 +313,15 @@ function getFaviconFromHtml(origin) {
   });
 }
 
+function tryGoogleFavicon(origin) {
+  var hostname;
+  try {
+    hostname = new URL(origin).hostname;
+  } catch (e) { return Promise.resolve(null); }
+  var url = 'https://www.google.com/s2/favicons?domain=' + encodeURIComponent(hostname) + '&sz=64';
+  return fetchIcon(url);
+}
+
 export function getFavicon(url) {
   var cacheKey;
   var origin;
@@ -310,13 +346,20 @@ export function getFavicon(url) {
     return lookupLocalIcon(url).then(function (localUrl) {
       if (localUrl) return localUrl;
 
-      return getFaviconFromHtml(origin).then(function (blob) {
+      return tryGoogleFavicon(origin).then(function (blob) {
         if (blob) {
           setCached(cacheKey, blob);
           return URL.createObjectURL(blob);
         }
-        setCached(cacheKey, null);
-        return '';
+
+        return getFaviconFromHtml(origin).then(function (blob) {
+          if (blob) {
+            setCached(cacheKey, blob);
+            return URL.createObjectURL(blob);
+          }
+          setCached(cacheKey, null);
+          return '';
+        });
       });
     });
   });
