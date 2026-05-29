@@ -2,6 +2,22 @@ import { state, cfg, save } from './store.js';
 import { showToast } from './utils.js';
 import { getFavicon } from './favicon.js';
 
+var currentObjectURLs = {};
+
+function clearObjectURLs() {
+  Object.keys(currentObjectURLs).forEach(function (k) {
+    URL.revokeObjectURL(currentObjectURLs[k]);
+  });
+  currentObjectURLs = {};
+}
+
+var dragInited = false;
+var placeholderEl = null;
+var currentPlaceholderIndex = -1;
+var AUTO_SCROLL_ZONE = 60;
+var AUTO_SCROLL_SPEED = 8;
+var autoScrollRaf = null;
+
 export function initContextMenu() {
   var menu = document.getElementById('context-menu');
   menu.addEventListener('click', function (e) {
@@ -103,6 +119,8 @@ export function renderSites() {
   var showName = cfg('site_showname') === '1';
   var newTab = cfg('site_newtab') === '1';
 
+  clearObjectURLs();
+
   state.sites.forEach(function (site, i) {
     var a = document.createElement('a');
     a.className = 'site-item';
@@ -127,16 +145,20 @@ export function renderSites() {
       iconWrap.appendChild(letterBg);
     }
 
-    if (site.icon && /^https?:\/\//i.test(site.icon)) {
-      getFavicon(site.icon).then(function (cachedUrl) {
-        img.src = cachedUrl || site.icon;
-      });
-    } else if (site.icon) {
+    if (site.icon) {
       img.src = site.icon;
     } else {
-      getFavicon(site.url).then(function (cachedUrl) {
-        if (cachedUrl) {
-          img.src = cachedUrl;
+      getFavicon(site.url).then(function (record) {
+        if (record && record.fetchStatus === 'success') {
+          if (record.blob) {
+            var objUrl = URL.createObjectURL(record.blob);
+            currentObjectURLs[i] = objUrl;
+            img.src = objUrl;
+          } else if (record.url) {
+            img.src = record.url;
+          } else {
+            showLetter();
+          }
         } else {
           showLetter();
         }
@@ -163,51 +185,6 @@ export function renderSites() {
       showContextMenu(e.clientX, e.clientY, i);
     });
 
-    a.addEventListener('dragstart', function (e) {
-      state.dragSrcIndex = i;
-      this.classList.add('dragging');
-      e.dataTransfer.effectAllowed = 'move';
-      e.dataTransfer.setData('text/plain', i.toString());
-    });
-
-    a.addEventListener('dragend', function () {
-      this.classList.remove('dragging');
-      state.dragSrcIndex = null;
-      grid.querySelectorAll('.site-item').forEach(function (el) {
-        el.classList.remove('drag-over-left', 'drag-over-right');
-      });
-    });
-
-    a.addEventListener('dragover', function (e) {
-      e.preventDefault();
-      e.dataTransfer.dropEffect = 'move';
-      var rect = this.getBoundingClientRect();
-      var midX = rect.left + rect.width / 2;
-      this.classList.remove('drag-over-left', 'drag-over-right');
-      if (e.clientX < midX) this.classList.add('drag-over-left');
-      else this.classList.add('drag-over-right');
-    });
-
-    a.addEventListener('dragleave', function () {
-      this.classList.remove('drag-over-left', 'drag-over-right');
-    });
-
-    a.addEventListener('drop', function (e) {
-      e.preventDefault();
-      this.classList.remove('drag-over-left', 'drag-over-right');
-      var fromIndex = state.dragSrcIndex;
-      var toIndex = i;
-      if (fromIndex === null || fromIndex === undefined || fromIndex === toIndex) return;
-      var item = state.sites.splice(fromIndex, 1)[0];
-      var rect = this.getBoundingClientRect();
-      var midX = rect.left + rect.width / 2;
-      var insertIndex = e.clientX < midX ? toIndex : toIndex + 1;
-      if (fromIndex < toIndex) insertIndex--;
-      state.sites.splice(insertIndex < 0 ? 0 : insertIndex, 0, item);
-      save();
-      renderSites();
-    });
-
     grid.appendChild(a);
   });
 
@@ -224,4 +201,129 @@ export function renderSites() {
   addEl.appendChild(addName);
   addEl.addEventListener('click', function () { openEditModal(-1); });
   grid.appendChild(addEl);
+
+  if (!dragInited) {
+    dragInited = true;
+
+    grid.addEventListener('dragstart', function(e) {
+      var item = e.target.closest('.site-item');
+      if (!item) { e.preventDefault(); return; }
+      
+      var index = parseInt(item.dataset.index);
+      state.dragSrcIndex = index;
+      currentPlaceholderIndex = index;
+      e.dataTransfer.effectAllowed = 'move';
+      e.dataTransfer.setData('text/plain', index.toString());
+      
+      placeholderEl = document.createElement('div');
+      placeholderEl.className = 'site-placeholder';
+      
+      setTimeout(function() {
+        item.classList.add('drag-hidden');
+        item.parentNode.insertBefore(placeholderEl, item);
+      }, 0);
+    });
+
+    grid.addEventListener('dragover', function(e) {
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+      if (!placeholderEl) return;
+
+      var scrollEl = document.getElementById('site-wrap');
+      var scrollRect = scrollEl.getBoundingClientRect();
+      if (e.clientY < scrollRect.top + AUTO_SCROLL_ZONE) {
+        if (!autoScrollRaf) {
+          (function scrollUp() {
+            scrollEl.scrollTop -= AUTO_SCROLL_SPEED;
+            autoScrollRaf = requestAnimationFrame(scrollUp);
+          })();
+        }
+      } else if (e.clientY > scrollRect.bottom - AUTO_SCROLL_ZONE) {
+        if (!autoScrollRaf) {
+          (function scrollDown() {
+            scrollEl.scrollTop += AUTO_SCROLL_SPEED;
+            autoScrollRaf = requestAnimationFrame(scrollDown);
+          })();
+        }
+      } else {
+        if (autoScrollRaf) { cancelAnimationFrame(autoScrollRaf); autoScrollRaf = null; }
+      }
+      
+      var targetItem = e.target.closest('.site-item, .site-item-add');
+      if (!targetItem) return;
+      if (targetItem.classList.contains('drag-hidden')) return;
+
+      var items = Array.from(grid.children).filter(function(el) {
+        return !el.classList.contains('drag-hidden') && !el.classList.contains('site-item-add') && el !== placeholderEl;
+      });
+
+      var newIndex = items.length;
+      if (targetItem.classList.contains('site-item')) {
+        var rect = targetItem.getBoundingClientRect();
+        var midX = rect.left + rect.width / 2;
+        var visualIndex = items.indexOf(targetItem);
+        newIndex = e.clientX < midX ? visualIndex : visualIndex + 1;
+      }
+      
+      if (newIndex !== currentPlaceholderIndex) {
+        var allMovingItems = Array.from(grid.children).filter(function(el) {
+          return !el.classList.contains('drag-hidden') && el !== placeholderEl;
+        });
+        
+        var rects = new Map();
+        allMovingItems.forEach(function(el) { rects.set(el, el.getBoundingClientRect()); });
+
+        if (newIndex >= items.length) {
+          grid.insertBefore(placeholderEl, addEl);
+        } else {
+          grid.insertBefore(placeholderEl, items[newIndex]);
+        }
+        currentPlaceholderIndex = newIndex;
+
+        allMovingItems.forEach(function(el) {
+          var oldRect = rects.get(el);
+          var newRect = el.getBoundingClientRect();
+          if (oldRect && (oldRect.left !== newRect.left || oldRect.top !== newRect.top)) {
+            var dx = oldRect.left - newRect.left;
+            var dy = oldRect.top - newRect.top;
+            el.style.transition = 'none';
+            el.style.transform = 'translate(' + dx + 'px, ' + dy + 'px)';
+            
+            void el.offsetWidth;
+            
+            el.style.transition = 'transform 0.25s cubic-bezier(0.2, 0, 0, 1)';
+            el.style.transform = 'translate(0, 0)';
+            
+            setTimeout(function() {
+              el.style.transition = '';
+              el.style.transform = '';
+            }, 250);
+          }
+        });
+      }
+    });
+
+    grid.addEventListener('dragend', function(e) {
+      if (autoScrollRaf) { cancelAnimationFrame(autoScrollRaf); autoScrollRaf = null; }
+      if (!placeholderEl) return;
+      var item = document.querySelector('.site-item.drag-hidden');
+      if (item) item.classList.remove('drag-hidden');
+      if (placeholderEl.parentNode) placeholderEl.parentNode.removeChild(placeholderEl);
+      placeholderEl = null;
+      
+      if (state.dragSrcIndex !== null && state.dragSrcIndex !== currentPlaceholderIndex) {
+        var fromIndex = state.dragSrcIndex;
+        var toIndex = currentPlaceholderIndex;
+        var movedItem = state.sites.splice(fromIndex, 1)[0];
+        state.sites.splice(toIndex < 0 ? 0 : toIndex, 0, movedItem);
+        save();
+        setTimeout(renderSites, 0);
+      }
+      state.dragSrcIndex = null;
+    });
+
+    grid.addEventListener('drop', function(e) {
+      e.preventDefault();
+    });
+  }
 }

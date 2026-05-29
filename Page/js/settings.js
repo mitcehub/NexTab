@@ -370,11 +370,17 @@ export function initSettings() {
   function initEngineSort() {
     var list = document.getElementById('engine-sort-list');
     var engines = getOrderedEngines();
-    var dragSrcIdx = null;
+    var engineDragSrcIdx = null;
+    var enginePlaceholder = null;
+    var enginePlaceholderIdx = -1;
 
     function renderList() {
       engines = getOrderedEngines();
       list.innerHTML = '';
+      enginePlaceholder = null;
+      enginePlaceholderIdx = -1;
+      engineDragSrcIdx = null;
+
       engines.forEach(function (eng, idx) {
         var item = document.createElement('div');
         item.className = 'engine-sort-item';
@@ -398,46 +404,102 @@ export function initSettings() {
         item.appendChild(img);
         item.appendChild(nameSpan);
         list.appendChild(item);
+      });
 
-        item.addEventListener('dragstart', function (e) {
-          dragSrcIdx = idx;
-          item.classList.add('dragging');
-          e.dataTransfer.effectAllowed = 'move';
-          e.dataTransfer.setData('text/plain', idx.toString());
+      list.addEventListener('dragstart', function (e) {
+        var item = e.target.closest('.engine-sort-item');
+        if (!item) { e.preventDefault(); return; }
+        engineDragSrcIdx = parseInt(item.dataset.index);
+        enginePlaceholderIdx = engineDragSrcIdx;
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', engineDragSrcIdx.toString());
+
+        enginePlaceholder = document.createElement('div');
+        enginePlaceholder.className = 'engine-sort-placeholder';
+
+        setTimeout(function () {
+          item.classList.add('drag-hidden');
+          item.parentNode.insertBefore(enginePlaceholder, item);
+        }, 0);
+      });
+
+      list.addEventListener('dragover', function (e) {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        if (!enginePlaceholder) return;
+
+        var targetItem = e.target.closest('.engine-sort-item');
+        if (!targetItem || targetItem.classList.contains('drag-hidden')) return;
+
+        var items = Array.from(list.children).filter(function (el) {
+          return el.classList.contains('engine-sort-item') && !el.classList.contains('drag-hidden') && el !== enginePlaceholder;
         });
 
-        item.addEventListener('dragend', function () {
-          item.classList.remove('dragging');
-          list.querySelectorAll('.engine-sort-item').forEach(function (el) {
-            el.classList.remove('drag-over');
+        var newIdx = items.length;
+        if (targetItem) {
+          var rect = targetItem.getBoundingClientRect();
+          var midY = rect.top + rect.height / 2;
+          var visualIdx = items.indexOf(targetItem);
+          newIdx = e.clientY < midY ? visualIdx : visualIdx + 1;
+        }
+
+        if (newIdx !== enginePlaceholderIdx) {
+          var allMovingItems = Array.from(list.children).filter(function (el) {
+            return el.classList.contains('engine-sort-item') && !el.classList.contains('drag-hidden') && el !== enginePlaceholder;
           });
-        });
 
-        item.addEventListener('dragover', function (e) {
-          e.preventDefault();
-          e.dataTransfer.dropEffect = 'move';
-          list.querySelectorAll('.engine-sort-item').forEach(function (el) {
-            el.classList.remove('drag-over');
+          var rects = new Map();
+          allMovingItems.forEach(function (el) { rects.set(el, el.getBoundingClientRect()); });
+
+          if (newIdx >= items.length) {
+            list.appendChild(enginePlaceholder);
+          } else {
+            list.insertBefore(enginePlaceholder, items[newIdx]);
+          }
+          enginePlaceholderIdx = newIdx;
+
+          allMovingItems.forEach(function (el) {
+            var oldRect = rects.get(el);
+            var newRect = el.getBoundingClientRect();
+            if (oldRect && (oldRect.left !== newRect.left || oldRect.top !== newRect.top)) {
+              var dx = oldRect.left - newRect.left;
+              var dy = oldRect.top - newRect.top;
+              el.style.transition = 'none';
+              el.style.transform = 'translate(' + dx + 'px, ' + dy + 'px)';
+
+              void el.offsetWidth;
+
+              el.style.transition = 'transform 0.25s cubic-bezier(0.2, 0, 0, 1)';
+              el.style.transform = 'translate(0, 0)';
+
+              setTimeout(function () {
+                el.style.transition = '';
+                el.style.transform = '';
+              }, 250);
+            }
           });
-          item.classList.add('drag-over');
-        });
+        }
+      });
 
-        item.addEventListener('dragleave', function () {
-          item.classList.remove('drag-over');
-        });
+      list.addEventListener('dragend', function () {
+        var hiddenItem = list.querySelector('.engine-sort-item.drag-hidden');
+        if (hiddenItem) hiddenItem.classList.remove('drag-hidden');
+        if (enginePlaceholder && enginePlaceholder.parentNode) enginePlaceholder.parentNode.removeChild(enginePlaceholder);
+        enginePlaceholder = null;
 
-        item.addEventListener('drop', function (e) {
-          e.preventDefault();
-          var fromIdx = dragSrcIdx;
-          var toIdx = idx;
-          if (fromIdx === null || fromIdx === toIdx) return;
-          var moved = engines.splice(fromIdx, 1)[0];
-          engines.splice(toIdx, 0, moved);
+        if (engineDragSrcIdx !== null && engineDragSrcIdx !== enginePlaceholderIdx) {
+          var moved = engines.splice(engineDragSrcIdx, 1)[0];
+          engines.splice(enginePlaceholderIdx < 0 ? 0 : enginePlaceholderIdx, 0, moved);
           setEngineOrder(engines.map(function (e) { return e.start; }));
           renderList();
           renderEngineDropdown();
           showToast('引擎顺序已更新');
-        });
+        }
+        engineDragSrcIdx = null;
+      });
+
+      list.addEventListener('drop', function (e) {
+        e.preventDefault();
       });
     }
 
