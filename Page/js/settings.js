@@ -1,4 +1,4 @@
-import { state, load, cfg, cfgSet, applyConfig, CONFIG_DEFAULTS, WALLPAPER_KEYS, getOrderedEngines, setEngineOrder } from './store.js';
+import { state, load, cfg, cfgSet, applyConfig, CONFIG_DEFAULTS, WALLPAPER_KEYS, getOrderedEngines, setEngineOrder, getRandomChineseSites } from './store.js';
 import { showToast, formatRangeLabel, refreshSettingsUI, refreshBgFitUI } from './utils.js';
 import { renderSites } from './sites.js';
 import { applyPreset, applySuite } from './presets.js';
@@ -349,8 +349,46 @@ export function initSettings() {
   });
 
   var resetBtn = document.getElementById('reset-btn');
+  var resetModal = document.getElementById('reset-confirm-modal');
+  var resetCancelBtn = document.getElementById('reset-confirm-cancel');
+  var resetProceedBtn = document.getElementById('reset-confirm-proceed');
+  var resetExportLink = document.getElementById('reset-confirm-export');
+
+  function openResetModal() {
+    resetModal.classList.add('open');
+  }
+
+  function closeResetModal() {
+    resetModal.classList.remove('open');
+  }
+
   resetBtn.addEventListener('click', function () {
-    if (!confirm('确定要重置全部设置和数据吗？此操作不可撤销。')) return;
+    openResetModal();
+  });
+
+  resetCancelBtn.addEventListener('click', function () {
+    closeResetModal();
+  });
+
+  resetModal.addEventListener('click', function (e) {
+    if (e.target === resetModal) closeResetModal();
+  });
+
+  resetExportLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    var json = JSON.stringify(getAllData(), null, 2);
+    var blob = new Blob([json], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'minimal-homepage-backup-' + new Date().toISOString().slice(0, 10) + '.json';
+    a.click();
+    URL.revokeObjectURL(url);
+    showToast('数据已导出，可继续重置');
+  });
+
+  resetProceedBtn.addEventListener('click', function () {
+    closeResetModal();
     Object.keys(CONFIG_DEFAULTS).forEach(function (k) {
       if (WALLPAPER_KEYS.indexOf(k) !== -1) return;
       localStorage.removeItem('mh_cfg_' + k);
@@ -359,6 +397,8 @@ export function initSettings() {
     localStorage.removeItem('mh_engine');
     localStorage.removeItem('mh_engine_order');
     load();
+    state.sites = getRandomChineseSites();
+    localStorage.setItem('mh_sites', JSON.stringify(state.sites));
     applyConfig();
     renderSites();
     refreshSettingsUI();

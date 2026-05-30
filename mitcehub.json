@@ -1,0 +1,134 @@
+{
+  "sites": [
+    {
+      "name": "淘宝网",
+      "url": "https://www.taobao.com/",
+      "icon": ""
+    },
+    {
+      "name": "B站",
+      "url": "https://www.bilibili.com/",
+      "icon": ""
+    },
+    {
+      "name": "搜鞋网",
+      "url": "https://sooxie.com/",
+      "icon": ""
+    },
+    {
+      "name": "阿里巴巴",
+      "url": "https://www.1688.com/",
+      "icon": ""
+    },
+    {
+      "name": "新款网",
+      "url": "https://www.xingfujie.cn/",
+      "icon": ""
+    },
+    {
+      "name": "开山网",
+      "url": "https://www.k3.cn/",
+      "icon": ""
+    },
+    {
+      "name": "包牛牛",
+      "url": "https://www.bao66.cn/web/",
+      "icon": ""
+    },
+    {
+      "name": "搜款网",
+      "url": "https://www.vvic.com",
+      "icon": ""
+    },
+    {
+      "name": "网商园",
+      "url": "https://cs.wsy.com/",
+      "icon": ""
+    },
+    {
+      "name": "托尼斯",
+      "url": "https://www.toonies.cn/",
+      "icon": ""
+    },
+    {
+      "name": "四季星座",
+      "url": "https://cz.571xz.com/",
+      "icon": ""
+    },
+    {
+      "name": "一起做网店",
+      "url": "https://gz.17zwd.com/",
+      "icon": ""
+    },
+    {
+      "name": "优酷开放平台",
+      "url": "https://om.youku.com/view/main/index",
+      "icon": ""
+    },
+    {
+      "name": "百家号",
+      "url": "https://baijiahao.baidu.com/builder/rc/home",
+      "icon": ""
+    },
+    {
+      "name": "快手",
+      "url": "https://cp.kuaishou.com/profile",
+      "icon": ""
+    },
+    {
+      "name": "抖音",
+      "url": "https://creator.douyin.com/creator-micro/content/manage",
+      "icon": ""
+    },
+    {
+      "name": "拼多多",
+      "url": "https://live.pinduoduo.com/n-creator/video/home",
+      "icon": ""
+    },
+    {
+      "name": "视频号",
+      "url": "https://channels.weixin.qq.com/platform",
+      "icon": ""
+    },
+    {
+      "name": "快传号",
+      "url": "https://kuaichuan.360kuai.com/#/console/dashboard",
+      "icon": ""
+    }
+  ],
+  "engine": {
+    "name": "Google",
+    "start": "https://www.google.com/search?q="
+  },
+  "clock_show": "1",
+  "clock_24h": "1",
+  "clock_seconds": "0",
+  "clock_fontsize": "72",
+  "clock_date_fontsize": "16",
+  "clock_date_format": "MD",
+  "clock_date_weight": "400",
+  "clock_font": "Comic Sans MS",
+  "clock_offset": "0",
+  "clock_style": "classic",
+  "search_width": "714",
+  "search_height": "46",
+  "search_radius": "24",
+  "search_opacity": "12",
+  "search_offset": "0",
+  "search_style": "pill",
+  "search_site_gap": "60",
+  "site_cols": "11",
+  "site_size": "60",
+  "site_radius": "5",
+  "site_opacity": "100",
+  "site_gap": "30",
+  "site_showname": "1",
+  "site_newtab": "1",
+  "site_style": "squircle",
+  "mask_opacity": "30",
+  "bg_blur": "0",
+  "bg_fit": "cover",
+  "wp_autorotate": "0",
+  "wp_autorotate_source": "wallhaven",
+  "bg": ""
+}

@@ -1,24 +1,88 @@
 export var DEFAULT_SITES = [
-  { name: '淘宝网', url: 'https://www.taobao.com/', icon: '' },
+  { name: '百度', url: 'https://www.baidu.com/', icon: '' },
   { name: 'B站', url: 'https://www.bilibili.com/', icon: '' },
-  { name: '搜鞋网', url: 'https://sooxie.com/', icon: '' },
-  { name: '阿里巴巴', url: 'https://www.1688.com/', icon: '' },
-  { name: '新款网', url: 'https://www.xingfujie.cn/', icon: '' },
-  { name: '开山网', url: 'https://www.k3.cn/', icon: '' },
-  { name: '包牛牛', url: 'https://www.bao66.cn/web/', icon: '' },
-  { name: '搜款网', url: 'https://www.vvic.com', icon: '' },
-  { name: '网商园', url: 'https://cs.wsy.com/', icon: '' },
-  { name: '托尼斯', url: 'https://www.toonies.cn/', icon: '' },
-  { name: '四季星座', url: 'https://cz.571xz.com/', icon: '' },
-  { name: '一起做网店', url: 'https://gz.17zwd.com/', icon: '' },
-  { name: '优酷开放平台', url: 'https://om.youku.com/view/main/index', icon: '' },
-  { name: '百家号', url: 'https://baijiahao.baidu.com/builder/rc/home', icon: '' },
-  { name: '快手', url: 'https://cp.kuaishou.com/profile', icon: '' },
-  { name: '抖音', url: 'https://creator.douyin.com/creator-micro/content/manage', icon: '' },
-  { name: '拼多多', url: 'https://live.pinduoduo.com/n-creator/video/home', icon: '' },
-  { name: '视频号', url: 'https://channels.weixin.qq.com/platform', icon: '' },
-  { name: '快传号', url: 'https://kuaichuan.360kuai.com/#/console/dashboard', icon: '' }
+  { name: '知乎', url: 'https://www.zhihu.com/', icon: '' },
+  { name: '微博', url: 'https://weibo.com/', icon: '' },
+  { name: '抖音', url: 'https://www.douyin.com/', icon: '' },
+  { name: '淘宝', url: 'https://www.taobao.com/', icon: '' },
+  { name: '京东', url: 'https://www.jd.com/', icon: '' },
+  { name: '小红书', url: 'https://www.xiaohongshu.com/', icon: '' },
+  { name: '网易云音乐', url: 'https://music.163.com/', icon: '' },
+  { name: '豆瓣', url: 'https://www.douban.com/', icon: '' },
+  { name: '爱奇艺', url: 'https://www.iqiyi.com/', icon: '' },
+  { name: '腾讯视频', url: 'https://v.qq.com/', icon: '' },
+  { name: '优酷', url: 'https://www.youku.com/', icon: '' },
+  { name: '快手', url: 'https://www.kuaishou.com/', icon: '' },
+  { name: '今日头条', url: 'https://www.toutiao.com/', icon: '' },
+  { name: '百度网盘', url: 'https://pan.baidu.com/', icon: '' },
+  { name: 'DeepSeek', url: 'https://chat.deepseek.com/', icon: '' },
+  { name: '美团', url: 'https://www.meituan.com/', icon: '' },
+  { name: '腾讯文档', url: 'https://docs.qq.com/', icon: '' }
 ];
+
+var CHINESE_POOL = [
+  { name: '百度', url: 'https://www.baidu.com/' },
+  { name: 'B站', url: 'https://www.bilibili.com/' },
+  { name: '知乎', url: 'https://www.zhihu.com/' },
+  { name: '微博', url: 'https://weibo.com/' },
+  { name: '抖音', url: 'https://www.douyin.com/' },
+  { name: '淘宝', url: 'https://www.taobao.com/' },
+  { name: '京东', url: 'https://www.jd.com/' },
+  { name: '小红书', url: 'https://www.xiaohongshu.com/' },
+  { name: '网易云音乐', url: 'https://music.163.com/' },
+  { name: '豆瓣', url: 'https://www.douban.com/' },
+  { name: '爱奇艺', url: 'https://www.iqiyi.com/' },
+  { name: '腾讯视频', url: 'https://v.qq.com/' },
+  { name: '优酷', url: 'https://www.youku.com/' },
+  { name: '快手', url: 'https://www.kuaishou.com/' },
+  { name: '今日头条', url: 'https://www.toutiao.com/' },
+  { name: '百度网盘', url: 'https://pan.baidu.com/' },
+  { name: 'DeepSeek', url: 'https://chat.deepseek.com/' },
+  { name: '美团', url: 'https://www.meituan.com/' },
+  { name: '腾讯文档', url: 'https://docs.qq.com/' },
+  { name: 'QQ音乐', url: 'https://y.qq.com/' },
+  { name: '飞书', url: 'https://www.feishu.cn/' },
+  { name: '石墨文档', url: 'https://shimo.im/' },
+  { name: '通义千问', url: 'https://tongyi.aliyun.com/' },
+  { name: '文心一言', url: 'https://yiyan.baidu.com/' },
+  { name: 'Kimi', url: 'https://kimi.moonshot.cn/' },
+  { name: '阿里云盘', url: 'https://www.aliyundrive.com/' },
+  { name: '百度地图', url: 'https://map.baidu.com/' },
+  { name: '携程', url: 'https://www.ctrip.com/' },
+  { name: '12306', url: 'https://www.12306.cn/' },
+  { name: '大众点评', url: 'https://www.dianping.com/' },
+  { name: '高德地图', url: 'https://www.amap.com/' },
+  { name: '网易新闻', url: 'https://news.163.com/' },
+  { name: '腾讯新闻', url: 'https://news.qq.com/' },
+  { name: '搜狐', url: 'https://www.sohu.com/' },
+  { name: '什么值得买', url: 'https://www.smzdm.com/' },
+  { name: '懂车帝', url: 'https://www.dongchedi.com/' },
+  { name: '虎扑', url: 'https://www.hupu.com/' },
+  { name: '哔哩哔哩直播', url: 'https://live.bilibili.com/' }
+];
+
+function shuffle(arr) {
+  var a = arr.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+
+export function getRandomChineseSites() {
+  var siteSize = parseInt(cfg('site_size')) || 60;
+  var siteGap = parseInt(cfg('site_gap')) || 30;
+  var availableWidth = window.innerWidth;
+  var itemTotalWidth = siteSize + siteGap;
+  var cols = Math.floor(availableWidth / itemTotalWidth);
+  cols = Math.max(5, cols);
+  var maxRows = Math.floor((window.innerHeight * 0.4) / (siteSize + 22 + siteGap));
+  var totalCount = Math.max(8, Math.min(cols * maxRows, 25));
+  return shuffle(CHINESE_POOL).slice(0, totalCount).map(function (s) {
+    return { name: s.name, url: s.url, icon: '' };
+  });
+}
 
 export var DEFAULT_ENGINE = { name: 'Google', start: 'https://www.google.com/search?q=' };
 
@@ -64,7 +128,8 @@ export var CONFIG_DEFAULTS = {
   search_site_gap: '60',
   site_cols: '0', site_size: '60', site_radius: '27', site_opacity: '100', site_gap: '30',
   site_showname: '1', site_newtab: '1', site_style: 'round',
-  mask_opacity: '30', bg_blur: '0', bg_fit: 'cover'
+  mask_opacity: '30', bg_blur: '0', bg_fit: 'cover',
+  wp_autorotate: '0', wp_autorotate_source: 'bing'
 };
 
 export var CONFIG_BOUNDS = {

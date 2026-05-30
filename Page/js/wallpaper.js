@@ -9,35 +9,28 @@ export function initWallpaper() {
   wallpaperClose.addEventListener('click', function () { wallpaperPanel.classList.remove('open'); });
 
   var bgUrlInput = document.getElementById('bg-url-input');
-  var bgUrlConfirm = document.getElementById('bg-url-confirm');
 
   var savedBg = localStorage.getItem('mh_bg');
   var bgUrl = savedBg || DEFAULT_BG;
   document.getElementById('bg-wrap').style.backgroundImage = "url('" + bgUrl + "')";
   if (savedBg) bgUrlInput.value = savedBg;
 
-  bgUrlConfirm.addEventListener('click', function () {
-    var url = bgUrlInput.value.trim();
-    if (!url) return;
-    if (!/^https?:\/\//i.test(url) && !/^data:image\//i.test(url)) {
-      showToast('壁纸URL需以 http:// 或 https:// 开头');
-      return;
-    }
-    document.getElementById('bg-wrap').style.backgroundImage = "url('" + url + "')";
-    localStorage.setItem('mh_bg', url);
-    showToast('壁纸已更新');
-  });
-
   document.getElementById('bg-url-default').addEventListener('click', function () {
-    bgUrlInput.value = DEFAULT_BG;
+    bgUrlInput.value = '';
     document.getElementById('bg-wrap').style.backgroundImage = "url('" + DEFAULT_BG + "')";
-    localStorage.setItem('mh_bg', DEFAULT_BG);
+    localStorage.removeItem('mh_bg');
     cfgSet('mask_opacity', '30');
     cfgSet('bg_blur', '0');
     cfgSet('bg_fit', 'cover');
     applyConfig();
     refreshSettingsUI();
     refreshBgFitUI();
+    if (autoCheck.checked) {
+      autoCheck.checked = false;
+      autoOptions.classList.add('hidden');
+      stopAutoRotate();
+      saveAutoRotateState();
+    }
     showToast('已恢复默认壁纸');
   });
 
@@ -186,9 +179,13 @@ export function initWallpaper() {
     }
   }
 
+  var cachedGalleryItems = [];
+
   function renderGallery(items, append) {
     var grid = document.getElementById('wallpaper-grid');
     if (!append) grid.innerHTML = '';
+
+    cachedGalleryItems = append ? cachedGalleryItems.concat(items) : items;
 
     items.forEach(function (item) {
       var card = document.createElement('div');
@@ -209,10 +206,139 @@ export function initWallpaper() {
         document.getElementById('bg-wrap').style.backgroundImage = "url('" + item.full + "')";
         localStorage.setItem('mh_bg', item.full);
         bgUrlInput.value = item.full;
+        if (autoCheck.checked) {
+          autoCheck.checked = false;
+          autoOptions.classList.add('hidden');
+          stopAutoRotate();
+          saveAutoRotateState();
+        }
         showToast('壁纸已更新');
       });
 
       grid.appendChild(card);
     });
+  }
+
+  var autoCheck = document.getElementById('autorotate-check');
+  var autoOptions = document.getElementById('autorotate-options');
+  var autoSourceBtns = document.querySelectorAll('.autorotate-source-btn');
+  var autoRotateTimer = null;
+  var autoRotateSource = 'bing';
+
+  var ROTATE_THROTTLE_MS = 30 * 60 * 1000;
+  var ROTATE_IDLE_MS = 15 * 60 * 1000;
+
+  function markRotate() {
+    cfgSet('last_rotate', Date.now().toString());
+  }
+
+  function shouldRotateOnOpen() {
+    var last = parseInt(cfg('last_rotate')) || 0;
+    return (Date.now() - last) >= ROTATE_THROTTLE_MS;
+  }
+
+  function applyRandomWallpaper() {
+    markRotate();
+    var source = autoRotateSource;
+    if (source === 'wallhaven') {
+      fetchRandomWallhaven();
+    } else {
+      fetchRandomBing();
+    }
+  }
+
+  function fetchRandomBing() {
+    fetch('https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8&mkt=zh-CN')
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (!data.images || !data.images.length) return;
+        var idx = Math.floor(Math.random() * data.images.length);
+        var img = data.images[idx];
+        var fullUrl = 'https://www.bing.com' + img.url.replace(/1920x1080/g, 'UHD');
+        document.getElementById('bg-wrap').style.backgroundImage = "url('" + fullUrl + "')";
+        localStorage.setItem('mh_bg', fullUrl);
+        bgUrlInput.value = '';
+      })
+      .catch(function () {});
+  }
+
+  var autoWhPage = 1;
+  function fetchRandomWallhaven() {
+    autoWhPage = Math.floor(Math.random() * 10) + 1;
+    fetch('https://wallhaven.cc/api/v1/search?categories=100&purity=100&sorting=toplist&order=desc&page=' + autoWhPage, { signal: AbortSignal.timeout(10000) })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (!data.data || !data.data.length) return;
+        var idx = Math.floor(Math.random() * data.data.length);
+        var img = data.data[idx];
+        document.getElementById('bg-wrap').style.backgroundImage = "url('" + img.path + "')";
+        localStorage.setItem('mh_bg', img.path);
+        bgUrlInput.value = '';
+      })
+      .catch(function () {});
+  }
+
+  function startAutoRotate() {
+    stopAutoRotate();
+    autoRotateTimer = setInterval(applyRandomWallpaper, ROTATE_IDLE_MS);
+  }
+
+  function stopAutoRotate() {
+    if (autoRotateTimer) { clearInterval(autoRotateTimer); autoRotateTimer = null; }
+  }
+
+  function saveAutoRotateState() {
+    cfgSet('wp_autorotate', autoCheck.checked ? '1' : '0');
+    cfgSet('wp_autorotate_source', autoRotateSource);
+  }
+
+  autoCheck.addEventListener('change', function () {
+    if (autoCheck.checked) {
+      autoOptions.classList.remove('hidden');
+      applyRandomWallpaper();
+      startAutoRotate();
+    } else {
+      autoOptions.classList.add('hidden');
+      stopAutoRotate();
+    }
+    saveAutoRotateState();
+  });
+
+  autoSourceBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      autoSourceBtns.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      autoRotateSource = btn.dataset.source;
+      saveAutoRotateState();
+      if (autoCheck.checked) applyRandomWallpaper();
+    });
+  });
+
+  document.getElementById('bg-url-confirm').addEventListener('click', function () {
+    var url = bgUrlInput.value.trim();
+    if (!url) return;
+    if (!/^https?:\/\//i.test(url) && !/^data:image\//i.test(url)) {
+      showToast('壁纸URL需以 http:// 或 https:// 开头');
+      return;
+    }
+    if (autoCheck.checked) {
+      autoCheck.checked = false;
+      autoOptions.classList.add('hidden');
+      stopAutoRotate();
+      saveAutoRotateState();
+    }
+    document.getElementById('bg-wrap').style.backgroundImage = "url('" + url + "')";
+    localStorage.setItem('mh_bg', url);
+    showToast('壁纸已更新');
+  });
+
+  if (cfg('wp_autorotate') === '1') {
+    autoCheck.checked = true;
+    autoRotateSource = cfg('wp_autorotate_source') || 'bing';
+    autoOptions.classList.remove('hidden');
+    autoSourceBtns.forEach(function (b) { b.classList.remove('active'); });
+    document.querySelector('.autorotate-source-btn[data-source="' + autoRotateSource + '"]').classList.add('active');
+    if (shouldRotateOnOpen()) applyRandomWallpaper();
+    startAutoRotate();
   }
 }

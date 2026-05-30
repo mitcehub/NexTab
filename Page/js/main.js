@@ -1,4 +1,4 @@
-import { load, applyConfig } from './store.js';
+import { load, applyConfig, state, getRandomChineseSites } from './store.js';
 import { initClock } from './clock.js';
 import { initSearch } from './search.js';
 import { renderSites, initContextMenu, openEditModal, closeEditModal, confirmEdit } from './sites.js';
@@ -9,6 +9,14 @@ import { showToast } from './utils.js';
 
 function init() {
   load();
+  if (!localStorage.getItem('mh_sites')) {
+    state.sites = getRandomChineseSites();
+    localStorage.setItem('mh_sites', JSON.stringify(state.sites));
+  }
+  afterSiteInit();
+}
+
+function afterSiteInit() {
   applyConfig();
   renderSites();
   initClock();

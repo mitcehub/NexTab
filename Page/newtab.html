@@ -377,12 +377,27 @@
         <div id="gallery-load-more" class="hidden">加载更多...</div>
       </div>
       <div id="wp-tab-custom" class="wp-tab-content">
+        <div id="random-wallpaper-section">
+          <label class="random-toggle-label">
+            <input type="checkbox" id="autorotate-check">
+            随机壁纸
+          </label>
+          <div id="autorotate-options" class="hidden">
+            <div class="settings-item vertical">
+              <label>来源</label>
+              <div id="autorotate-source-switch">
+                <button class="autorotate-source-btn active" data-source="bing">Bing</button>
+                <button class="autorotate-source-btn" data-source="wallhaven">Wallhaven</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="settings-divider"></div>
         <div class="settings-group">
           <div class="settings-item vertical">
-            <label>壁纸URL</label>
+            <label>自定义壁纸URL</label>
             <div class="input-row">
-              <input id="bg-url-input" type="text" placeholder="输入图片网址"
-                value="https://www.bing.com/th?id=OHR.SichuanTea_ZH-CN6703437873_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp">
+              <input id="bg-url-input" type="text" placeholder="输入图片网址">
               <button id="bg-url-confirm" class="btn-small">确认</button>
             </div>
           </div>
@@ -435,6 +450,20 @@
       <div class="modal-actions">
         <button id="edit-cancel" class="btn-cancel">取消</button>
         <button id="edit-confirm" class="btn-confirm">确认</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="reset-confirm-modal">
+    <div id="reset-confirm-box">
+      <div class="modal-title">确认重置</div>
+      <div class="reset-confirm-body">
+        <p>重置将清除所有网址和自定义设置，且不可恢复。</p>
+        <p>建议先<a href="#" id="reset-confirm-export">导出备份</a>。</p>
+      </div>
+      <div class="modal-actions">
+        <button id="reset-confirm-cancel" class="btn-cancel">取消</button>
+        <button id="reset-confirm-proceed" class="btn-danger">忽略警告，继续重置</button>
       </div>
     </div>
   </div>
