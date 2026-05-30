@@ -25,8 +25,7 @@
 
 ### Firefox
 
-1. 前往 [Releases](https://github.com/mitcehub/NexTab/releases) 下载最新版 `NexTab-Firefox-x.x.x.xpi`
-2. 直接拖入浏览器窗口安装，或在 `about:addons` 中从文件安装
+前往 [Firefox 附加组件商店](https://addons.mozilla.org/zh-CN/firefox/addon/newnextab/) 直接安装。
 
 ## 使用说明
 
