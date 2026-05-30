@@ -111,25 +111,61 @@ body {
   max-width: 92%;
   min-height: 46px;
   height: var(--search-height);
-  border-radius: var(--search-radius);
   margin-top: 30px;
   margin-bottom: var(--search-site-gap);
   transform: translateY(var(--search-offset));
   transition: all 0.3s ease;
-  z-index: 10;
+  z-index: 100;
   flex-shrink: 0;
   overflow: visible;
+
+  /* Theme Inheritance Custom Variables */
+  --search-bg: rgba(30, 30, 40, 0.95);
+  --search-blur: blur(20px);
+  --search-border-color: rgba(255, 255, 255, 0.1);
+  --search-border-width: 0px;
+  --search-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+  /* Apply properties using variable system */
+}
+
+#search-wrap::before {
+  content: '';
+  position: absolute;
+  inset: calc(-1 * var(--search-border-width));
+  border-radius: calc(var(--search-radius) + var(--search-border-width));
+  background: var(--search-bg);
+  border: var(--search-border-width) solid var(--search-border-color);
+  box-shadow: var(--search-shadow);
+  -webkit-backdrop-filter: var(--search-blur);
+  backdrop-filter: var(--search-blur);
+  z-index: -1;
+  pointer-events: none;
+}
+
+#search-wrap.suggest-open {
+  z-index: 1000 !important;
+}
+
+#search-wrap.suggest-open::before {
+  bottom: calc(-1 * var(--suggest-height, 320px) - var(--search-border-width)) !important;
+  border-radius: calc(var(--search-radius) + var(--search-border-width)) !important;
+  border-bottom-color: var(--search-border-color) !important;
 }
 
 #search-engine-btn {
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 0 12px 0 16px;
+  padding: 0 4px 0 12px;
   cursor: pointer;
   height: 100%;
   flex-shrink: 0;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.15s;
+}
+
+#search-engine-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
 }
 
 #search-engine-icon {
@@ -140,7 +176,7 @@ body {
 }
 
 #search-engine-arrow {
-  opacity: 0.6;
+  opacity: 0.5;
   transition: transform 0.2s;
 }
 
@@ -159,7 +195,7 @@ body {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 6px 0;
-  min-width: 180px;
+  min-width: 140px;
   display: none;
   z-index: 2000;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -194,11 +230,261 @@ body {
   color: #60a5fa;
 }
 
+#suggest-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: none;
+  border-radius: 0 0 var(--search-radius) var(--search-radius);
+  padding: 0;
+  z-index: 2000;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  overflow: hidden;
+  pointer-events: none;
+  transition: max-height 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  scrollbar-width: none;
+}
+
+#suggest-dropdown::-webkit-scrollbar {
+  display: none;
+}
+
+#suggest-dropdown.show {
+  max-height: 320px;
+  opacity: 1;
+  transform: translateY(0);
+  padding: 6px 0;
+  pointer-events: auto;
+  overflow-y: auto;
+}
+
+#search-wrap.suggest-open::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  z-index: 2001;
+  pointer-events: none;
+}
+
+.suggest-item {
+  position: relative;
+  padding: 8px 20px 8px 64px;
+  cursor: pointer;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  transition: background 0.15s cubic-bezier(0.4, 0, 0.2, 1), color 0.15s;
+}
+
+.suggest-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.35);
+  transition: color 0.15s;
+  flex-shrink: 0;
+}
+
+.suggest-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.suggest-item:hover,
+.suggest-item.highlight {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.suggest-item:hover .suggest-icon,
+.suggest-item.highlight .suggest-icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#search-wrap.search-pill {
+  --search-bg: rgba(255, 255, 255, var(--search-opacity));
+  --search-blur: blur(20px);
+  --search-border-color: rgba(255, 255, 255, 0.15);
+  --search-border-width: 1px;
+  --search-shadow: none;
+}
+
+#search-wrap.search-pill:focus-within {
+  --search-bg: rgba(255, 255, 255, calc(var(--search-opacity) + 0.06));
+  --search-border-color: rgba(255, 255, 255, 0.25);
+  --search-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.search-pill .suggest-item:hover,
+.search-pill .suggest-item.highlight {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#search-wrap.search-glass {
+  --search-bg: rgba(255, 255, 255, 0.06);
+  --search-blur: blur(40px) saturate(1.5);
+  --search-border-color: rgba(255, 255, 255, 0.08);
+  --search-border-width: 1px;
+  --search-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(255, 255, 255, 0.03);
+}
+
+#search-wrap.search-glass:focus-within {
+  --search-bg: rgba(255, 255, 255, 0.1);
+  --search-border-color: rgba(255, 255, 255, 0.15);
+  --search-shadow: 0 8px 40px rgba(0, 0, 0, 0.15), inset 0 0 30px rgba(255, 255, 255, 0.05);
+}
+
+#search-wrap.search-border {
+  --search-bg: transparent;
+  --search-blur: none;
+  --search-border-color: rgba(255, 255, 255, 0.35);
+  --search-border-width: 1.5px;
+  --search-shadow: none;
+}
+
+#search-wrap.search-border:focus-within {
+  --search-border-color: rgba(255, 255, 255, 0.55);
+  --search-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+.search-border .suggest-item:hover,
+.search-border .suggest-item.highlight {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+#search-wrap.search-minimal {
+  --search-bg: transparent;
+  --search-blur: none;
+  --search-border-color: transparent;
+  --search-border-width: 0px;
+  --search-shadow: none;
+}
+
+#search-wrap.search-minimal::before {
+  border-radius: 0;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.25);
+}
+
+#search-wrap.search-minimal:focus-within::before {
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.search-minimal #suggest-dropdown {
+  background: transparent;
+}
+
+.search-minimal .suggest-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.search-minimal .suggest-item:hover,
+.search-minimal .suggest-item.highlight {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.search-minimal .suggest-item:last-child {
+  border-bottom: none;
+}
+
+#search-wrap.search-neumorphism {
+  --search-bg: rgba(40, 40, 50, 0.4);
+  --search-blur: none;
+  --search-border-color: transparent;
+  --search-border-width: 0px;
+  --search-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.4), inset -6px -6px 12px rgba(255, 255, 255, 0.05), 0 8px 24px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.search-neumorphism #suggest-dropdown {
+  box-shadow:
+    inset 6px -6px 12px rgba(0, 0, 0, 0.4),
+    inset -6px 0 12px rgba(255, 255, 255, 0.05),
+    0 16px 24px rgba(0, 0, 0, 0.3);
+}
+
+.search-neumorphism .suggest-item:hover,
+.search-neumorphism .suggest-item.highlight {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow:
+    inset 2px 2px 5px rgba(0, 0, 0, 0.3),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.02);
+}
+
+#search-wrap.search-spotlight {
+  --search-bg: rgba(20, 20, 30, 0.8);
+  --search-blur: none;
+  --search-border-color: rgba(255, 255, 255, 0.05);
+  --search-border-width: 1px;
+  --search-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#search-wrap.search-spotlight:focus-within {
+  --search-shadow: 0 24px 50px -5px rgba(0, 0, 0, 1);
+  transform: translateY(-4px) scale(1.02);
+}
+
+#search-wrap.search-glowborder {
+  --search-bg: rgba(10, 10, 15, 0.8);
+  --search-blur: none;
+  --search-border-color: transparent;
+  --search-border-width: 2px;
+  --search-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+#search-wrap.search-glowborder::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  height: auto;
+  background: linear-gradient(45deg, #ff007a, #7a00ff, #00d2ff, #00ffaa, #ff007a);
+  background-size: 400%;
+  z-index: -2;
+  border-radius: calc(var(--search-radius) + var(--search-border-width));
+  animation: bg-glow 8s linear infinite;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+#search-wrap.search-glowborder:focus-within::after {
+  opacity: 1;
+}
+
+#search-wrap.search-glowborder.suggest-open::after {
+  bottom: calc(-1 * var(--suggest-height, 320px) - var(--search-border-width));
+  border-radius: calc(var(--search-radius) + var(--search-border-width));
+}
+
+#search-wrap.search-acrylic {
+  --search-bg: rgba(255, 255, 255, 0.1);
+  --search-blur: blur(40px) saturate(200%);
+  --search-border-color: rgba(255, 255, 255, 0.2);
+  --search-border-width: 1px;
+  --search-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
 #search-form {
   flex: 1;
   display: flex;
   align-items: center;
   height: 100%;
+  position: relative;
 }
 
 #search-input {
@@ -1412,62 +1698,6 @@ body {
     0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-#search-wrap.search-pill {
-  background: rgba(255, 255, 255, var(--search-opacity));
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-#search-wrap.search-pill:focus-within {
-  background: rgba(255, 255, 255, calc(var(--search-opacity) + 0.06));
-  border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-}
-
-#search-wrap.search-glass {
-  background: rgba(255, 255, 255, 0.06);
-  -webkit-backdrop-filter: blur(40px) saturate(1.5);
-  backdrop-filter: blur(40px) saturate(1.5);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(255, 255, 255, 0.03);
-}
-
-#search-wrap.search-glass:focus-within {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15), inset 0 0 30px rgba(255, 255, 255, 0.05);
-}
-
-#search-wrap.search-border {
-  background: transparent;
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
-  border: 1.5px solid rgba(255, 255, 255, 0.35);
-  box-shadow: none;
-}
-
-#search-wrap.search-border:focus-within {
-  border-color: rgba(255, 255, 255, 0.55);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
-}
-
-#search-wrap.search-minimal {
-  background: transparent;
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
-  border: none;
-  border-bottom: 1.5px solid rgba(255, 255, 255, 0.25);
-  border-radius: 0;
-}
-
-#search-wrap.search-minimal:focus-within {
-  border-bottom-color: rgba(255, 255, 255, 0.5);
-}
-
-#search-wrap.search-minimal #search-engine-btn {
-  border-right: none;
-}
 
 #site-grid.site-round .site-icon-wrap {
   background: rgba(255, 255, 255, 0.1);
@@ -1641,53 +1871,7 @@ body {
 }
 
 /* --- 新增搜索框样式 --- */
-.search-neumorphism {
-  background: rgba(40, 40, 50, 0.4);
-  box-shadow:
-    inset 6px 6px 12px rgba(0, 0, 0, 0.4),
-    inset -6px -6px 12px rgba(255, 255, 255, 0.05),
-    0 8px 24px rgba(0, 0, 0, 0.2);
-  border: none;
-}
-
-.search-spotlight {
-  background: rgba(20, 20, 30, 0.8);
-  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.search-spotlight:focus-within {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 24px 50px -5px rgba(0, 0, 0, 1);
-}
-
-.search-glowborder {
-  background: rgba(10, 10, 15, 0.8);
-  position: relative;
-  border: 2px solid transparent;
-  background-clip: padding-box;
-}
-
-.search-glowborder::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
-  background: linear-gradient(45deg, #ff007a, #7a00ff, #00d2ff, #00ffaa, #ff007a);
-  background-size: 400%;
-  z-index: -1;
-  border-radius: inherit;
-  animation: bg-glow 8s linear infinite;
-  opacity: 0.6;
-  transition: opacity 0.3s;
-}
-
-.search-glowborder:focus-within::before {
-  opacity: 1;
-}
+/* ── 搜索主题变量定义（旧静态块已迁移至变量系统，此处仅保留动画关键帧） ── */
 
 @keyframes bg-glow {
   0% {
@@ -1697,14 +1881,6 @@ body {
   100% {
     background-position: 400% 0;
   }
-}
-
-.search-acrylic {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(40px) saturate(200%);
-  -webkit-backdrop-filter: blur(40px) saturate(200%);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 /* --- 新增图标样式 --- */
